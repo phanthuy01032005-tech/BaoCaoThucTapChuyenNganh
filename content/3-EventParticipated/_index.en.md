@@ -1,13 +1,15 @@
----
-title: "Meetup events attended"
-date: 2026-11-07
-weight: 3
-chapter: false
-pre: " <b> 3. </b> "
----
+## Mini Meetup – First Cloud AI Journey
 
-During my internship, I attended community events that offered memorable experiences, useful new knowledge and valuable moments.
+### Event information
 
-| Event | Date | Role |
-| --- | --- | --- |
-| [Mini Meetup – First Cloud AI Journey](3.1-Event1/) | 17/10/2026 | Attendee |
+- **Event name:** Mini Meetup – First Cloud AI Journey.
+- **Date:** 17 October 2026.
+- **Location:** AWS Office – Grand Terra Tower, 36 Cat Linh, Hanoi.
+- **Organizer:** First Cloud AI Journey (FCAJ) Community.
+- **Role:** Attendee.
+
+### Participation
+
+I attended the Mini Meetup – First Cloud AI Journey event organized by the FCAJ community in Hanoi.
+
+### Event photos
