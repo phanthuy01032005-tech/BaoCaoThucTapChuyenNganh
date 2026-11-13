@@ -1,39 +1,39 @@
 ---
-title: "Tuần 4: Amazon EC2 và máy chủ ảo"
+title: "Tuần 4: Tìm hiểu quản lý truy cập với AWS IAM"
 menuTitle: "Worklog Tuần 4"
-date: 2026-11-08
+date: 2026-09-07
 weight: 4
 chapter: false
-pre: " <b> 1.4. </b> "
+pre: " <b>1.4.</b> "
 ---
 
-## Amazon EC2 và máy chủ ảo
-
-**Thời gian:** 31/08/2026–04/09/2026.
+**Thời gian:** 07/09/2026–11/09/2026
 
 ## Mục tiêu
 
-- Hiểu chức năng và thành phần của EC2 Instance.
-- Hiểu các bước chuẩn bị, khởi tạo và kết nối máy chủ.
+- Tìm hiểu vai trò của AWS Identity and Access Management trong quản lý truy cập tài nguyên.
+- Phân biệt tài khoản root, IAM User, IAM Group và IAM Role.
+- Đọc cấu trúc cơ bản của IAM Policy và cách mô tả quyền.
+- Tìm hiểu nguyên tắc cấp quyền tối thiểu và bảo vệ danh tính truy cập.
 
-## Nội dung đã tìm hiểu
+## Nội dung học tập trong tuần
 
 | Thứ | Nội dung học tập | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | Tìm hiểu EC2 Instance, AMI và Instance Type. | 31/08/2026 | 31/08/2026 | [Cloud Journey – Amazon EC2 và máy chủ ảo](https://cloudjourney.awsfcaj.com/) |
-| 3 | Nghiên cứu lựa chọn CPU, RAM và kiến trúc bộ xử lý. | 01/09/2026 | 01/09/2026 | [Cloud Journey – Amazon EC2 và máy chủ ảo](https://cloudjourney.awsfcaj.com/) |
-| 4 | Đọc hướng dẫn chuẩn bị VPC, subnet, Security Group và key pair. | 02/09/2026 | 02/09/2026 | [Cloud Journey – Amazon EC2 và máy chủ ảo](https://cloudjourney.awsfcaj.com/) |
-| 5 | Tìm hiểu khởi tạo Amazon Linux và kết nối SSH. | 03/09/2026 | 03/09/2026 | [Cloud Journey – Amazon EC2 và máy chủ ảo](https://cloudjourney.awsfcaj.com/) |
-| 6 | Nghiên cứu trạng thái Instance và các lỗi kết nối thường gặp. | 04/09/2026 | 04/09/2026 | [Cloud Journey – Amazon EC2 và máy chủ ảo](https://cloudjourney.awsfcaj.com/) |
+| 2 | Đọc phần giới thiệu AWS IAM; tìm hiểu khái niệm xác thực, phân quyền và sự khác nhau giữa tài khoản root với IAM User. | 07/09/2026 | 07/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| 3 | Tìm hiểu IAM User và IAM Group; đọc cách tổ chức người dùng theo nhóm và quản lý quyền thông qua các chính sách gắn với nhóm. | 08/09/2026 | 08/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| 4 | Đọc cấu trúc IAM Policy dạng JSON; tìm hiểu ý nghĩa của Statement, Effect, Action, Resource và Condition qua các ví dụ trong tài liệu. | 09/09/2026 | 09/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| 5 | Tìm hiểu IAM Role, khái niệm đảm nhận vai trò và thông tin xác thực tạm thời; ghi chép sự khác nhau giữa IAM User và IAM Role. | 10/09/2026 | 10/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| 6 | Tổng hợp các thành phần IAM; đọc nguyên tắc cấp quyền tối thiểu, vai trò của MFA và những lưu ý khi bảo vệ thông tin xác thực. | 11/09/2026 | 11/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
 
-## Kết quả đạt được
+## Tổng kết kiến thức
 
-- Đã hiểu quy trình khởi tạo và kết nối EC2.
-- Đã nắm được các yếu tố lựa chọn cấu hình máy chủ và kiểm tra kết nối.
-- Đã phân biệt cấu hình máy chủ với ảnh hệ điều hành dùng để khởi tạo.
-- Đã hiểu tiêu chí chọn cấu hình phù hợp nhu cầu và chi phí.
-- Đã hiểu điều kiện mạng và xác thực trước khi kết nối máy chủ.
-- Đã hiểu vai trò địa chỉ máy chủ, tài khoản hệ điều hành và khóa truy cập.
-- Đã biết kiểm tra trạng thái, cổng truy cập và cấu hình mạng.
+- Hiểu xác thực là xác định danh tính, còn phân quyền là xác định những hành động danh tính đó được phép thực hiện.
+- Phân biệt được tài khoản root, IAM User, IAM Group và IAM Role.
+- Hiểu IAM Group giúp tổ chức các IAM User có nhu cầu quyền tương tự.
+- Nhận biết các thành phần cơ bản trong IAM Policy và mục đích của từng thành phần.
+- Hiểu IAM Role có thể được đảm nhận để nhận thông tin xác thực tạm thời.
+- Nắm được nguyên tắc cấp quyền tối thiểu: chỉ cấp những quyền cần thiết cho công việc.
+- Hiểu vai trò của MFA và việc bảo vệ thông tin xác thực trong quản lý truy cập.
 
-Sau tuần 4, em đã hiểu EC2, AMI, Instance Type và kết nối máy chủ.
+Qua tuần học thứ tư, em đã hệ thống hóa kiến thức nền tảng về AWS IAM và mối liên hệ giữa danh tính, chính sách và quyền truy cập. Nội dung học giúp em hiểu cách AWS tổ chức việc cấp quyền và các nguyên tắc cần lưu ý để bảo vệ tài nguyên.
