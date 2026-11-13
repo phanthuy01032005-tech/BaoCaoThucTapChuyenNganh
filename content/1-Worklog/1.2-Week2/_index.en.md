@@ -1,39 +1,36 @@
 ---
-title: "Week 2: AWS IAM and access management"
+title: "Week 2: Managing Costs with AWS Budgets"
 menuTitle: "Worklog Week 2"
-date: 2026-11-08
+date: 2026-08-17
 weight: 2
 chapter: false
-pre: " <b> 1.2. </b> "
+pre: " <b>1.2.</b> "
 ---
 
-## AWS IAM and access management
-
-**Period:** 17/08/2026–21/08/2026.
+**Period:** 17–21 August 2026
 
 ## Objectives
 
-- Understand how IAM controls access to AWS resources.
-- Distinguish users, groups, policies and roles.
+- Understand the purpose of AWS cost monitoring.
+- Study the components of an AWS budget.
+- Learn how budget notifications work through documentation.
 
-## Topics studied
+## Daily learning activities
 
-| Day | Learning activity | Start date | Completion date | Study source |
+| Day | Learning activity | Start date | Completion date | Reference |
 | --- | --- | --- | --- | --- |
-| Monday | Studied IAM and the principle of least privilege. | 17/08/2026 | 17/08/2026 | [Cloud Journey – AWS IAM and access management](https://cloudjourney.awsfcaj.com/) |
-| Tuesday | Read guidance on creating and organizing IAM users and groups. | 18/08/2026 | 18/08/2026 | [Cloud Journey – AWS IAM and access management](https://cloudjourney.awsfcaj.com/) |
-| Wednesday | Examined policy structure: Effect, Action and Resource. | 19/08/2026 | 19/08/2026 | [Cloud Journey – AWS IAM and access management](https://cloudjourney.awsfcaj.com/) |
-| Thursday | Studied IAM roles, trust policies and temporary credentials. | 20/08/2026 | 20/08/2026 | [Cloud Journey – AWS IAM and access management](https://cloudjourney.awsfcaj.com/) |
-| Friday | Studied Switch Role and how to interpret AccessDenied errors. | 21/08/2026 | 21/08/2026 | [Cloud Journey – AWS IAM and access management](https://cloudjourney.awsfcaj.com/) |
+| Monday | Read about AWS Billing and Cost Management and the information available for reviewing costs and payments. | 17/08/2026 | 17/08/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Tuesday | Study the purpose of AWS Budgets, the budget types introduced in the materials and the documented setup process. | 18/08/2026 | 18/08/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Wednesday | Read about budget periods, budget amounts and the scope of costs included in a budget. | 19/08/2026 | 19/08/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Thursday | Study notification thresholds, actual costs, forecasted costs and notification recipients. | 20/08/2026 | 20/08/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Friday | Summarize the budget monitoring process and record key points about interpreting notifications and managing resources. | 21/08/2026 | 21/08/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
 
-## Learning outcomes
+## Learning summary
 
-- Distinguished users, groups, policies and roles.
-- Explained least privilege and how to check access permissions.
-- Understood why each task should receive only necessary permissions.
-- Distinguished user identities from groups used to manage permissions.
-- Understood how to describe allowed actions on specific resources.
-- Distinguished role permissions from the conditions for assuming a role.
-- Learned to identify the current identity and permissions to inspect.
+- Understood why monitoring costs is necessary when using AWS.
+- Identified the basic components of a budget.
+- Distinguished actual costs from forecasted costs.
+- Understood how budget notifications support cost awareness.
+- Distinguished receiving a notification from automatically stopping resources.
 
-After week 2, I distinguished IAM users, groups, policies and roles.
+This week's reading helped me understand how AWS Budgets supports cost monitoring and how to interpret budget information.
