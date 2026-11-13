@@ -38,4 +38,4 @@ pre: " <b>1.9.</b> "
 - Phân biệt lỗi do quyền truy cập với lỗi do thiếu tệp hoặc sai đường dẫn.
 - Nội dung tuần tập trung đọc tài liệu và phân tích ví dụ, không thực hiện tạo bucket hoặc triển khai website.
 
-Qua tuần học thứ chín, em đã hệ thống hóa kiến thức về Amazon S3 và mô hình lưu trữ website tĩnh. Việc đọc tài liệu giúp em hiểu mối liên hệ giữa cấu trúc tệp, cấu hình hosting và quyền truy cập khi cung cấp nội dung website.
+Qua tuần học thứ chín, em đã hệ thống hóa kiến thức về Amazon S3 và mô hình lưu trữ website tĩnh. Việc đọc tài liệu giúp em hiểu mối liên hệ giữa cấu trúc tệp, cấu hình hosting và quyền truy cập khi cung cấp nội dung website.tài liệu giúp em hiểu mối liên hệ giữa cấu trúc tệp, cấu hình hosting và quyền truy cập khi cung cấp nội dung website.
