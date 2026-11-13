@@ -1,3 +1,12 @@
+---
+title: "Events participated in"
+menuTitle: "Events participated in"
+date: 2026-10-17
+weight: 3
+chapter: false
+pre: " <b>3.</b> "
+---
+
 ## Mini Meetup – First Cloud AI Journey
 
 ### Event information
