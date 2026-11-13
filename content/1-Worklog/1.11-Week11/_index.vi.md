@@ -1,39 +1,41 @@
 ---
-title: "Tuần 11: Luồng xác thực Cognito và JWT"
+title: "Tuần 11: Tìm hiểu đơn giản hóa điện toán với Amazon Lightsail"
 menuTitle: "Worklog Tuần 11"
-date: 2026-11-08
+date: 2026-10-26
 weight: 11
 chapter: false
-pre: " <b> 1.11. </b> "
+pre: " <b>1.11.</b> "
 ---
 
-## Luồng xác thực Cognito và JWT
-
-**Thời gian:** 19/10/2026–23/10/2026.
+**Thời gian:** 26/10/2026–30/10/2026
 
 ## Mục tiêu
 
-- Hiểu quá trình ứng dụng nhận và kiểm tra token.
-- Phân biệt xác thực danh tính với phân quyền nghiệp vụ.
+- Tìm hiểu mục đích sử dụng Amazon Lightsail qua tài liệu.
+- Đọc các thành phần cơ bản của Lightsail instance và gói tài nguyên.
+- Tìm hiểu blueprint, kết nối máy chủ và cấu hình mạng.
+- Đọc về snapshot, theo dõi tài nguyên và quản lý chi phí.
 
-## Nội dung đã tìm hiểu
+## Nội dung học tập trong tuần
 
 | Thứ | Nội dung học tập | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | Nghiên cứu Authorization Code và PKCE cho ứng dụng web. | 19/10/2026 | 19/10/2026 | [Cloud Journey – Luồng xác thực Cognito và JWT](https://cloudjourney.awsfcaj.com/) |
-| 3 | Tìm hiểu ID Token, Access Token và Refresh Token. | 20/10/2026 | 20/10/2026 | [Cloud Journey – Luồng xác thực Cognito và JWT](https://cloudjourney.awsfcaj.com/) |
-| 4 | Nghiên cứu JWT, issuer, sub, client_id và thời gian hiệu lực. | 21/10/2026 | 21/10/2026 | [Cloud Journey – Luồng xác thực Cognito và JWT](https://cloudjourney.awsfcaj.com/) |
-| 5 | Tìm hiểu đăng nhập, làm mới phiên và đăng xuất. | 22/10/2026 | 22/10/2026 | [Cloud Journey – Luồng xác thực Cognito và JWT](https://cloudjourney.awsfcaj.com/) |
-| 6 | Phân tích tình huống token thiếu, sai hoặc hết hạn và tài khoản bị khóa. | 23/10/2026 | 23/10/2026 | [Cloud Journey – Luồng xác thực Cognito và JWT](https://cloudjourney.awsfcaj.com/) |
+| 2 | Đọc phần giới thiệu Amazon Lightsail; tìm hiểu các trường hợp sử dụng và cách dịch vụ tổ chức tài nguyên theo gói được mô tả trong tài liệu. | 26/10/2026 | 26/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| 3 | Tìm hiểu Lightsail instance, blueprint hệ điều hành và blueprint ứng dụng; đọc các yếu tố cần cân nhắc khi lựa chọn cấu hình máy chủ. | 27/10/2026 | 27/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| 4 | Đọc về kết nối máy chủ, địa chỉ IP công khai, static IP và quản lý DNS; tìm hiểu vai trò của các quy tắc tường lửa trong kiểm soát kết nối. | 28/10/2026 | 28/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| 5 | Tìm hiểu snapshot và mục đích sao lưu máy chủ; đọc các chỉ số theo dõi tài nguyên và cách sử dụng thông tin giám sát để nhận biết tình trạng hoạt động. | 29/10/2026 | 29/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| 6 | Tổng hợp các thành phần Lightsail; so sánh cách tiếp cận cấu hình với Amazon EC2 và ghi chép những điểm cần đọc kỹ về tài nguyên, hạn mức và chi phí. | 30/10/2026 | 30/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
 
-## Kết quả đạt được
+## Tổng kết kiến thức
 
-- Đã giải thích được luồng xác thực Cognito và vai trò các loại token.
-- Đã nắm các kiểm tra JWT cơ bản và sự khác nhau giữa xác thực với phân quyền.
-- Đã hiểu các bước chuyển hướng, nhận mã và đổi mã lấy token.
-- Đã phân biệt mục đích sử dụng và thời hạn của từng loại token.
-- Đã hiểu các thông tin cần kiểm tra trước khi chấp nhận token.
-- Đã hiểu giới hạn của thao tác đăng xuất đối với token đã phát hành.
-- Đã hiểu sự khác nhau giữa xác thực thất bại và không đủ quyền truy cập.
+- Hiểu Amazon Lightsail cung cấp cách tiếp cận đơn giản để tìm hiểu và tổ chức các tài nguyên phục vụ ứng dụng.
+- Nhận biết Lightsail instance là máy chủ ảo, còn blueprint cung cấp cấu hình khởi tạo theo hệ điều hành hoặc ứng dụng.
+- Hiểu việc lựa chọn gói tài nguyên cần dựa vào nhu cầu xử lý, bộ nhớ, lưu trữ và truyền dữ liệu.
+- Phân biệt địa chỉ IP công khai với static IP trong việc duy trì địa chỉ truy cập ổn định.
+- Hiểu vai trò của DNS trong liên kết tên miền với địa chỉ tài nguyên.
+- Nắm được mục đích của quy tắc tường lửa trong kiểm soát các kết nối đến máy chủ.
+- Hiểu snapshot hỗ trợ lưu lại trạng thái dữ liệu của tài nguyên để phục vụ khôi phục hoặc tạo tài nguyên mới theo cơ chế được hỗ trợ.
+- Nhận biết các chỉ số giám sát giúp theo dõi mức sử dụng và tình trạng tài nguyên.
+- Nội dung tuần tập trung đọc tài liệu và so sánh khái niệm, không thực hiện tạo Lightsail instance hoặc triển khai ứng dụng.
 
-Sau tuần 11, em đã hiểu luồng đăng nhập Cognito và kiểm tra JWT.
+Qua tuần học thứ mười một, em đã hệ thống hóa kiến thức về Amazon Lightsail, từ lựa chọn blueprint và gói tài nguyên đến cấu hình mạng, sao lưu và giám sát. Việc đối chiếu với kiến thức EC2 giúp em hiểu rõ hơn cách Lightsail đơn giản hóa một số thao tác quản lý máy chủ.
