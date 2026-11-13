@@ -1,39 +1,40 @@
 ---
-title: "Week 6: Amazon S3 and AWS CLI"
+title: "Week 6: Compute Essentials with Amazon EC2"
 menuTitle: "Worklog Week 6"
-date: 2026-11-08
+date: 2026-09-21
 weight: 6
 chapter: false
-pre: " <b> 1.6. </b> "
+pre: " <b>1.6.</b> "
 ---
 
-## Amazon S3 and AWS CLI
-
-**Period:** 14/09/2026–18/09/2026.
+**Period:** 21–25 September 2026
 
 ## Objectives
 
-- Understand the S3 object-storage model.
-- Understand managing buckets and objects with the AWS CLI.
+- Understand the purpose of Amazon Elastic Compute Cloud.
+- Study the basic configuration of an EC2 instance.
+- Read about instance lifecycle and storage.
+- Understand networking and connection concepts through documentation.
 
-## Topics studied
+## Daily learning activities
 
-| Day | Learning activity | Start date | Completion date | Study source |
+| Day | Learning activity | Start date | Completion date | Reference |
 | --- | --- | --- | --- | --- |
-| Monday | Studied buckets, objects, object keys and Regions. | 14/09/2026 | 14/09/2026 | [Cloud Journey – Amazon S3 and AWS CLI](https://cloudjourney.awsfcaj.com/) |
-| Tuesday | Examined storage classes and S3 pricing factors. | 15/09/2026 | 15/09/2026 | [Cloud Journey – Amazon S3 and AWS CLI](https://cloudjourney.awsfcaj.com/) |
-| Wednesday | Read guidance on creating buckets and managing objects in the Console. | 16/09/2026 | 16/09/2026 | [Cloud Journey – Amazon S3 and AWS CLI](https://cloudjourney.awsfcaj.com/) |
-| Thursday | Studied AWS CLI installation, profiles and Region selection. | 17/09/2026 | 17/09/2026 | [Cloud Journey – Amazon S3 and AWS CLI](https://cloudjourney.awsfcaj.com/) |
-| Friday | Examined S3 commands for listing, copying and transferring files. | 18/09/2026 | 18/09/2026 | [Cloud Journey – Amazon S3 and AWS CLI](https://cloudjourney.awsfcaj.com/) |
+| Monday | Read an introduction to EC2; study instances, Amazon Machine Images and the relationship between an AMI and an instance's operating system. | 21/09/2026 | 21/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Tuesday | Study instance types, vCPUs and memory; read how configurations are selected for different computing needs. | 22/09/2026 | 22/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Wednesday | Read about instance lifecycle and distinguish starting, stopping, rebooting and terminating an instance. | 23/09/2026 | 23/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Thursday | Study Amazon EBS, volumes and snapshots; read about storage persistence and data considerations when instance states change. | 24/09/2026 | 24/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Friday | Read about key pairs, Security Groups and connection methods; summarize the relationships between compute, storage and networking. | 25/09/2026 | 25/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
 
-## Learning outcomes
+## Learning summary
 
-- Understood the bucket/object model and the AWS CLI’s role.
-- Understood file-management operations and S3 cost factors.
-- Distinguished bucket names, object keys and file contents.
-- Understood the relationship between access patterns and storage choices.
-- Understood uploading, listing, downloading and deleting objects.
-- Understood choosing the correct identity and environment for commands.
-- Explained the purposes of basic storage-management commands.
+- Understood the role of EC2 in providing virtual servers.
+- Distinguished AMIs from instance types.
+- Learned the main instance lifecycle operations.
+- Distinguished stopping an instance from terminating it.
+- Understood the purposes of EBS volumes and snapshots.
+- Recognized that volume deletion on termination depends on configuration.
+- Understood the roles of Security Groups and key pairs.
+- Learned that stopping an instance does not necessarily stop all related resource charges.
 
-After week 6, I understood S3 storage and AWS CLI resource management.
+This week's reading helped me understand the components to consider when reviewing an EC2 configuration.
