@@ -1,68 +1,39 @@
----
-title: "Chia sẻ, đóng góp ý kiến"
-date: 2026-11-07
-weight: 6
-chapter: false
-pre: " <b> 6. </b> "
----
+## Cảm nhận về quá trình học tập
 
-Phần này ghi lại cảm nhận cá nhân của em (**Trần Hải Lương**) sau kỳ thực tập trong chương trình **First Cloud AI Journey (FCAJ)** tại AWS Việt Nam. Với nền tảng là sinh viên Công nghệ thông tin, em xem đây là cơ hội để củng cố kiến thức, làm quen với môi trường điện toán đám mây và vận dụng vào dự án CloudDocs.
+Trong thời gian thực tập, việc tìm hiểu tài liệu First Cloud AI Journey giúp em tiếp cận kiến thức AWS theo trình tự, từ quản lý tài khoản và chi phí đến phân quyền, mạng, máy chủ, lưu trữ và cơ sở dữ liệu.
 
-## Đánh giá theo từng khía cạnh
+Việc ghi nhật kí theo tuần giúp em chia nhỏ nội dung học tập, theo dõi tiến độ và tổng hợp những kiến thức cần ôn tập. Qua đó, em nhận thấy tự học hiệu quả cần có mục tiêu rõ ràng và ghi chép thường xuyên.
 
-**1. Môi trường thực tập**
+## Những điểm hữu ích của tài liệu
 
-Chương trình tạo điều kiện để em chủ động học qua tài liệu Cloud Journey và thực hành trên AWS Console. Việc kết hợp tìm hiểu dịch vụ với một dự án cụ thể giúp em có mục tiêu rõ ràng, biết đặt câu hỏi và tự tìm nguyên nhân khi gặp lỗi.
+- Các chủ đề tạo điều kiện tìm hiểu nhiều nhóm dịch vụ AWS.
+- Sơ đồ và hướng dẫn giúp người mới hình dung mối liên hệ giữa các thành phần.
+- Việc kết hợp khái niệm với cấu hình mẫu hỗ trợ quá trình đọc hiểu.
+- Các nội dung về bảo mật và chi phí giúp người học hình thành ý thức sử dụng tài nguyên có trách nhiệm.
 
-**2. Mentor và hỗ trợ**
+## Khó khăn khi tìm hiểu
 
-Sự hướng dẫn và những trao đổi trong cộng đồng giúp em có thêm hướng tiếp cận khi tìm hiểu AWS. Em nhận thấy việc chuẩn bị mô tả lỗi, cấu hình liên quan và các bước đã thử trước khi hỏi giúp quá trình trao đổi hiệu quả hơn, đồng thời rèn tính chủ động trong học tập.
+Một số thuật ngữ và nội dung về mạng, chính sách IAM hoặc cấu hình container cần được đọc lại nhiều lần. Khi chưa có trải nghiệm thực hành, em còn gặp khó khăn trong việc hình dung toàn bộ quá trình hoạt động của dịch vụ.
 
-**3. Phù hợp với ngành CNTT**
+Tài liệu tiếng Anh cũng đòi hỏi em dành thêm thời gian tra cứu. Ngoài ra, thông tin về dịch vụ có thể thay đổi nên người học cần kiểm tra tài liệu chính thức trước khi áp dụng hướng dẫn.
 
-Nội dung thực tập gắn với kiến thức lập trình web, cơ sở dữ liệu và mạng máy tính đã học. Khi áp dụng vào CloudDocs, em hiểu rõ hơn cách một ứng dụng kết hợp backend, xác thực, lưu trữ tệp và dữ liệu nghiệp vụ, cũng như vai trò của phân quyền và cấu hình môi trường.
+## Đề xuất đối với tài liệu học tập
 
-**4. Kỹ năng tiến bộ rõ nhất**
+- Bổ sung bảng thuật ngữ Việt–Anh cho từng chủ đề.
+- Nêu rõ kiến thức cần chuẩn bị trước mỗi bài học.
+- Bổ sung câu hỏi ôn tập và phần giải thích những khái niệm dễ nhầm lẫn.
+- Ghi rõ thời điểm cập nhật và các thay đổi ảnh hưởng đến hướng dẫn.
+- Với bài thực hành, trình bày rõ tài nguyên cần tạo, quyền truy cập, chi phí có thể phát sinh và cách dọn dẹp tài nguyên.
+- Bổ sung tình huống lỗi thường gặp kèm hướng tra cứu để người học rèn luyện cách xác định nguyên nhân.
 
-- Đọc và đối chiếu cấu hình AWS Console, phân biệt vai trò của EC2, S3, RDS, Cognito và IAM.
-- Phân tích lỗi theo từng lớp: quyền truy cập, kết nối mạng, cấu hình ứng dụng và dữ liệu.
-- Hiểu luồng đăng nhập, truyền tệp bằng presigned URL và kiểm soát quyền tài liệu.
-- Ghi worklog, tổng hợp tài liệu và sử dụng ảnh thực hành để trình bày kết quả rõ ràng hơn.
+## Đề xuất đối với hoạt động hỗ trợ học tập
 
-**5. Văn hóa cộng đồng**
+Em mong có thêm các buổi trao đổi dành cho người mới, tập trung giải thích sơ đồ, thuật ngữ và cách đọc tài liệu. Các buổi hỏi đáp theo từng nhóm chủ đề sẽ giúp người học củng cố kiến thức trước khi chuyển sang nội dung tiếp theo.
 
-Việc tham gia Mini Meetup – First Cloud AI Journey và theo dõi các nội dung chia sẻ giúp em tiếp cận thêm góc nhìn về cloud, AI và định hướng nghề nghiệp. Em cảm nhận cộng đồng là nơi có thể học hỏi từ trải nghiệm thực tế của những người đi trước, đồng thời trao đổi những khó khăn của người mới.
+Nếu có điều kiện tổ chức thực hành, em đề xuất sử dụng bài tập có phạm vi nhỏ, mục tiêu cụ thể và hướng dẫn kiểm soát chi phí. Sau mỗi bài, người học có thể tổng hợp kết quả và trao đổi những điểm chưa hiểu.
 
-**6. Điều kiện thực tập**
+## Lời cảm ơn
 
-Nguồn tài liệu trực tuyến và khả năng thực hành trên AWS giúp em linh hoạt trong việc học. Tuy nhiên, người học cần chủ động sắp xếp thời gian, theo dõi chi phí và quản lý tài nguyên sau mỗi buổi thực hành để duy trì quá trình học hiệu quả.
+Em xin cảm ơn đơn vị thực tập, anh chị hướng dẫn và cộng đồng First Cloud AI Journey đã tạo cơ hội để em tìm hiểu kiến thức về AWS.
 
-## Câu hỏi phản hồi
-
-**Điều hài lòng nhất?**
-
-Em hài lòng nhất khi hiểu được mối liên hệ giữa các dịch vụ và vận dụng vào CloudDocs. Việc kết nối S3, Cognito, EC2 và RDS giúp kiến thức không còn rời rạc; mỗi lỗi gặp phải cũng giúp em hiểu rõ hơn cách hệ thống hoạt động.
-
-**Chương trình nên cải thiện gì?**
-
-- Có thêm buổi trao đổi về các lỗi thường gặp khi tích hợp, như IAM, CORS, callback Cognito và kết nối RDS.
-- Cung cấp checklist cấu hình và kiểm thử cơ bản để người mới tự đối chiếu sau mỗi nội dung học.
-- Gợi ý cách ghi worklog và lưu minh chứng ngay từ đầu để báo cáo cuối kỳ đầy đủ, thuận tiện hơn.
-
-**Có giới thiệu bạn bè tham gia không?**
-
-Có. Em sẽ giới thiệu chương trình cho các bạn muốn tìm hiểu AWS và sẵn sàng tự học, thực hành. Theo em, chương trình phù hợp với sinh viên muốn nối kiến thức ở trường với một bài toán triển khai thực tế.
-
-## Đề xuất thêm
-
-- Tổ chức buổi hướng dẫn ước lượng chi phí và theo dõi AWS Budgets cho một dự án nhỏ.
-- Có hoạt động chia sẻ ngắn giữa các bạn thực tập để trình bày kiến trúc, khó khăn và cách xử lý.
-- Bổ sung checklist bàn giao, sao lưu và dọn dẹp tài nguyên khi kết thúc dự án thực hành.
-
-**Có muốn gắn bó thêm với chương trình không?**
-
-Có. Em mong muốn tiếp tục học qua Cloud Journey, tham gia các buổi meetup phù hợp và chia sẻ lại những kinh nghiệm đã tích lũy khi thực hiện CloudDocs.
-
-**Lời cảm ơn**
-
-Em cảm ơn các anh chị hướng dẫn và cộng đồng First Cloud AI Journey đã hỗ trợ, tạo điều kiện học tập trong kỳ thực tập. Những kiến thức và trải nghiệm này giúp em tự tin hơn khi làm việc với AWS, đồng thời có thêm định hướng để phát triển kỹ năng trong thời gian tới.
+Những kiến thức và phương pháp học tập tích lũy được là nền tảng để em tiếp tục tự học, bổ sung trải nghiệm thực hành và phát triển kỹ năng chuyên môn.
