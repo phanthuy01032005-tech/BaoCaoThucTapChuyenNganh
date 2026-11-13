@@ -1,14 +1,15 @@
----
-title: "Các sự kiện meetup đã tham gia"
-date: 2026-11-07
-weight: 3
-chapter: false
-pre: " <b> 3. </b> "
----
+## Mini Meetup – First Cloud AI Journey
 
-Trong quá trình thực tập, em đã tham gia các sự kiện với mỗi sự kiện là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là những khoảnh khắc rất tuyệt vời.
+### Thông tin sự kiện
 
-| Sự kiện | Thời gian | Vai trò |
-| --- | --- | --- |
-| [Mini Meetup – First Cloud AI Journey](3.1-Event1/) | 17/10/2026 | Người tham dự |
+- **Tên sự kiện:** Mini Meetup – First Cloud AI Journey.
+- **Thời gian:** 17/10/2026.
+- **Địa điểm:** AWS Office – Grand Terra Tower, 36 Cát Linh, Hà Nội.
+- **Đơn vị tổ chức:** Cộng đồng First Cloud AI Journey (FCAJ).
+- **Vai trò:** Người tham dự.
 
+### Nội dung tham gia
+
+Em tham dự sự kiện Mini Meetup – First Cloud AI Journey do cộng đồng FCAJ tổ chức tại Hà Nội.
+
+### Hình ảnh sự kiện
