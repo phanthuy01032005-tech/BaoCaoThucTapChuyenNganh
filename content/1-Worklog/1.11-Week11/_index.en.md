@@ -1,39 +1,40 @@
 ---
-title: "Week 11: Cognito authentication flows and JWTs"
+title: "Week 11: Simplified Computing with Amazon Lightsail"
 menuTitle: "Worklog Week 11"
-date: 2026-11-08
+date: 2026-10-26
 weight: 11
 chapter: false
-pre: " <b> 1.11. </b> "
+pre: " <b>1.11.</b> "
 ---
 
-## Cognito authentication flows and JWTs
-
-**Period:** 19/10/2026–23/10/2026.
+**Period:** 26–30 October 2026
 
 ## Objectives
 
-- Understand how applications obtain and validate tokens.
-- Distinguish identity authentication from business authorization.
+- Understand the purpose of Amazon Lightsail.
+- Study instances, blueprints and resource bundles.
+- Read about server connections and networking.
+- Learn about snapshots, monitoring and cost considerations.
 
-## Topics studied
+## Daily learning activities
 
-| Day | Learning activity | Start date | Completion date | Study source |
+| Day | Learning activity | Start date | Completion date | Reference |
 | --- | --- | --- | --- | --- |
-| Monday | Examined Authorization Code and PKCE for web applications. | 19/10/2026 | 19/10/2026 | [Cloud Journey – Cognito authentication flows and JWTs](https://cloudjourney.awsfcaj.com/) |
-| Tuesday | Studied ID tokens, access tokens and refresh tokens. | 20/10/2026 | 20/10/2026 | [Cloud Journey – Cognito authentication flows and JWTs](https://cloudjourney.awsfcaj.com/) |
-| Wednesday | Examined JWTs, issuer, sub, client_id and validity periods. | 21/10/2026 | 21/10/2026 | [Cloud Journey – Cognito authentication flows and JWTs](https://cloudjourney.awsfcaj.com/) |
-| Thursday | Studied sign-in, session refresh and logout. | 22/10/2026 | 22/10/2026 | [Cloud Journey – Cognito authentication flows and JWTs](https://cloudjourney.awsfcaj.com/) |
-| Friday | Analyzed missing, invalid and expired tokens and locked accounts. | 23/10/2026 | 23/10/2026 | [Cloud Journey – Cognito authentication flows and JWTs](https://cloudjourney.awsfcaj.com/) |
+| Monday | Read an introduction to Lightsail, its use cases and the resource bundles described in the documentation. | 26/10/2026 | 26/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Tuesday | Study Lightsail instances, operating system blueprints and application blueprints; read about selecting server resources. | 27/10/2026 | 27/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Wednesday | Read about server connections, public IP addresses, static IPs, DNS and firewall rules. | 28/10/2026 | 28/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Thursday | Study snapshots and server backup concepts; read about monitoring metrics and how they indicate resource usage. | 29/10/2026 | 29/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Friday | Summarize Lightsail components, compare its configuration approach with EC2 and record resource, quota and cost considerations. | 30/10/2026 | 30/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
 
-## Learning outcomes
+## Learning summary
 
-- Explained Cognito authentication flows and token roles.
-- Understood basic JWT checks and authentication versus authorization.
-- Understood redirects, authorization codes and code-to-token exchange.
-- Distinguished their purposes and lifetimes.
-- Understood information to check before accepting a token.
-- Understood logout limitations for previously issued tokens.
-- Understood authentication failure versus insufficient access permissions.
+- Understood Lightsail's simplified approach to organizing application resources.
+- Distinguished instances from operating system and application blueprints.
+- Understood the need to consider compute, memory, storage and data transfer when selecting a bundle.
+- Distinguished public IP addresses from static IPs.
+- Learned the purposes of DNS and firewall rules.
+- Understood how snapshots support recovery or the creation of new resources through supported processes.
+- Recognized how monitoring metrics help interpret resource usage.
+- Studied documentation without creating an instance or deploying an application.
 
-After week 11, I understood Cognito sign-in flows and JWT validation.
+Comparing Lightsail with EC2 helped me understand how Lightsail simplifies some server management tasks.
