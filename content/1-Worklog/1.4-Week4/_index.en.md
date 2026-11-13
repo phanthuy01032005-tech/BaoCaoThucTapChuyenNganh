@@ -1,39 +1,39 @@
 ---
-title: "Week 4: Amazon EC2 and virtual servers"
+title: "Week 4: Access Management with AWS IAM"
 menuTitle: "Worklog Week 4"
-date: 2026-11-08
+date: 2026-09-07
 weight: 4
 chapter: false
-pre: " <b> 1.4. </b> "
+pre: " <b>1.4.</b> "
 ---
 
-## Amazon EC2 and virtual servers
-
-**Period:** 31/08/2026–04/09/2026.
+**Period:** 7–11 September 2026
 
 ## Objectives
 
-- Understand EC2 instance functions and components.
-- Understand server preparation, launch and connection steps.
+- Understand the role of AWS Identity and Access Management.
+- Distinguish the root user, IAM users, groups and roles.
+- Study the basic structure of IAM policies.
+- Understand least privilege and identity protection.
 
-## Topics studied
+## Daily learning activities
 
-| Day | Learning activity | Start date | Completion date | Study source |
+| Day | Learning activity | Start date | Completion date | Reference |
 | --- | --- | --- | --- | --- |
-| Monday | Studied EC2 instances, AMIs and instance types. | 31/08/2026 | 31/08/2026 | [Cloud Journey – Amazon EC2 and virtual servers](https://cloudjourney.awsfcaj.com/) |
-| Tuesday | Examined CPU, memory and processor-architecture choices. | 01/09/2026 | 01/09/2026 | [Cloud Journey – Amazon EC2 and virtual servers](https://cloudjourney.awsfcaj.com/) |
-| Wednesday | Read guidance on VPCs, subnets, security groups and key pairs. | 02/09/2026 | 02/09/2026 | [Cloud Journey – Amazon EC2 and virtual servers](https://cloudjourney.awsfcaj.com/) |
-| Thursday | Studied launching Amazon Linux and connecting with SSH. | 03/09/2026 | 03/09/2026 | [Cloud Journey – Amazon EC2 and virtual servers](https://cloudjourney.awsfcaj.com/) |
-| Friday | Examined instance states and common connection errors. | 04/09/2026 | 04/09/2026 | [Cloud Journey – Amazon EC2 and virtual servers](https://cloudjourney.awsfcaj.com/) |
+| Monday | Read an introduction to IAM; study authentication, authorization and the differences between the root user and IAM users. | 07/09/2026 | 07/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Tuesday | Study IAM users and groups and how policies attached to groups help organize permissions for users with similar needs. | 08/09/2026 | 08/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Wednesday | Read IAM policy examples in JSON and study Statement, Effect, Action, Resource and Condition. | 09/09/2026 | 09/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Thursday | Study IAM roles, role assumption and temporary credentials; compare IAM users with IAM roles. | 10/09/2026 | 10/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Friday | Summarize IAM components and read about least privilege, MFA and protecting credentials. | 11/09/2026 | 11/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
 
-## Learning outcomes
+## Learning summary
 
-- Understood launching and connecting to EC2.
-- Understood server sizing and connection verification.
-- Distinguished server configuration from the operating-system image used at launch.
-- Understood selecting resources to meet workload and cost requirements.
-- Understood network and authentication prerequisites for server access.
-- Understood server addresses, operating-system accounts and access keys.
-- Learned to check status, access ports and network configuration.
+- Distinguished authentication from authorization.
+- Identified the purposes of the root user, IAM users, groups and roles.
+- Understood how groups help organize user permissions.
+- Recognized the main elements of an IAM policy.
+- Understood the purpose of temporary credentials.
+- Learned the principle of granting only the permissions required.
+- Understood the role of MFA in protecting identities.
 
-After week 4, I understood EC2, AMIs, instance types and server connections.
+This week's study helped me connect identities, policies and permissions and understand the foundations of access management on AWS.
