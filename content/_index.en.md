@@ -9,23 +9,28 @@ chapter: false
 
 ## Student information
 
-**Full name:** Trần Hải Lương
+**Full name:** Phan Thị Thanh Thủy
 
-**Phone:** [0918285802](tel:0918285802)
+**Phone number:** 0859158604
 
-**Email:** [tranhailuong0@gmail.com](mailto:tranhailuong0@gmail.com)
-
-**Class:** K68CNTTA
+**Email:** Phanthuy01032005@gmail.com
 
 **University:** Vietnam National University of Agriculture
 
 **Major:** Information Technology
 
-**Internship organization:** Amazon Web Services
+**Class:** K68CNTTC
 
-**Internship period:** From 10 August 2026 to 30 October 2026.
+**Internship company:** Amazon Web Services Vietnam Company Limited
 
-<p style="text-align:center"><img src="/images/tran-hai-luong.png" alt="Trần Hải Lương" width="220" style="display:block;width:220px;max-width:100%;height:auto;margin:1.5rem auto" /></p>
+**Internship period:** From 8 August 2026 to 14 November 2026
+
+<p style="text-align:center;">
+  <img src="https://phanthuy01032005-tech.github.io/BaoCaoThucTapChuyenNganh/PhanThiThanhThuy.jpg.jpg"
+       alt="Phan Thị Thanh Thủy"
+       width="300"
+       style="max-width:100%;height:auto;">
+</p>
 
 ## Report contents
 
