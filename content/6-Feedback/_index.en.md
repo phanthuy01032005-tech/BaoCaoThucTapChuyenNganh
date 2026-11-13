@@ -1,68 +1,39 @@
----
-title: "Feedback and suggestions"
-date: 2026-11-07
-weight: 6
-chapter: false
-pre: " <b> 6. </b> "
----
+## Reflections on the learning process
 
-This section presents my personal reflections (**Trần Hải Lương**) after my internship in the **First Cloud AI Journey (FCAJ)** program at AWS Vietnam. As an Information Technology student, I saw this as an opportunity to strengthen my knowledge, become familiar with cloud computing and apply what I learned to CloudDocs.
+During my internship, studying First Cloud AI Journey materials helped me approach AWS topics in sequence, from account and cost management to permissions, networking, compute, storage and databases.
 
-## Assessment by aspect
+Maintaining a weekly worklog helped me divide the material into manageable topics, track my progress and identify concepts that needed further review. This experience showed me the value of clear learning objectives and regular note-taking.
 
-**1. Internship environment**
+## Helpful aspects of the materials
 
-The program encouraged me to study independently through Cloud Journey materials and practice in the AWS Console. Combining service exploration with a specific project gave me clear goals and helped me ask questions and investigate errors independently.
+- The topics introduce several groups of AWS services.
+- Diagrams and instructions help beginners understand the relationships between components.
+- Explanations supported by sample configurations make technical concepts easier to follow.
+- Security and cost management topics encourage responsible use of cloud resources.
 
-**2. Mentoring and support**
+## Learning difficulties
 
-Guidance and community discussions provided useful approaches to learning AWS. I found that preparing an error description, relevant configuration and the steps already attempted made discussions more effective and encouraged independent learning.
+Some terminology and topics, including networking, IAM policies and container configuration, required repeated reading. With limited practical experience, I sometimes found it difficult to visualize how all the components work together.
 
-**3. Relevance to Information Technology**
+Reading English documentation also required additional time for vocabulary research. Since service information can change, learners need to check official documentation before applying instructions.
 
-The internship connected with my studies in web development, databases and computer networks. Applying these topics to CloudDocs helped me understand how an application combines its backend, authentication, file storage and business data, as well as the importance of authorization and environment configuration.
+## Suggestions for the learning materials
 
-**4. Skills that improved the most**
+- Include a Vietnamese–English glossary for each topic.
+- State the prerequisite knowledge at the beginning of each lesson.
+- Add review questions and explanations of commonly confused concepts.
+- Clearly indicate update dates and changes that affect instructions.
+- For practical exercises, identify the required resources, permissions, potential costs and cleanup steps.
+- Include common error scenarios and guidance on researching their causes.
 
-- Reading and comparing AWS Console settings and distinguishing the roles of EC2, S3, RDS, Cognito and IAM.
-- Investigating errors by layer: access permissions, networking, application configuration and data.
-- Understanding sign-in, presigned URL file transfers and document access control.
-- Keeping worklogs, organizing documentation and using practice screenshots to present results more clearly.
+## Suggestions for learning support
 
-**5. Community culture**
+I would welcome more beginner-focused discussions explaining diagrams, terminology and documentation reading strategies. Topic-based question-and-answer sessions could help learners consolidate their knowledge before moving forward.
 
-Attending the Mini Meetup – First Cloud AI Journey and following community contributions exposed me to more perspectives on cloud, AI and career development. I see the community as a place to learn from experienced practitioners and discuss the difficulties faced by beginners.
+Where practical sessions are available, I suggest small exercises with clear objectives and cost controls. Learners could then summarize their results and discuss any remaining questions.
 
-**6. Internship conditions**
+## Acknowledgements
 
-Online resources and AWS practice gave me flexibility in learning. However, learners need to manage their time, monitor costs and review resources after each practice session to maintain an effective learning routine.
+I would like to thank the internship organization, mentors and the First Cloud AI Journey community for the opportunity to study AWS.
 
-## Feedback questions
-
-**What was most satisfying?**
-
-I was most satisfied with understanding how the services relate to each other and applying that knowledge to CloudDocs. Connecting S3, Cognito, EC2 and RDS made the topics less isolated, while each error helped me understand the system better.
-
-**What could the program improve?**
-
-- Add discussions of common integration problems, including IAM, CORS, Cognito callbacks and RDS connectivity.
-- Provide basic configuration and testing checklists so beginners can review their progress after each topic.
-- Introduce worklog and evidence collection practices early to make the final report more complete and easier to prepare.
-
-**Would you recommend the program to friends?**
-
-Yes. I would recommend it to friends who want to learn AWS and are willing to study and practice independently. I believe it suits students who want to connect university knowledge with a practical deployment problem.
-
-## Additional suggestions
-
-- Organize a session on estimating costs and using AWS Budgets for a small project.
-- Hold short sharing sessions where interns present their architecture, difficulties and solutions.
-- Add a checklist for handover, backups and resource cleanup at the end of a practice project.
-
-**Would you like to remain involved in the program?**
-
-Yes. I would like to continue learning through Cloud Journey, attend relevant meetups and share the experience I gained while working on CloudDocs.
-
-**Acknowledgements**
-
-I thank the mentors and the First Cloud AI Journey community for their support and learning opportunities during my internship. This knowledge and experience have increased my confidence in working with AWS and given me further direction for developing my skills.
+The knowledge and study methods gained during this period provide a foundation for continued learning, practical experience and professional development.
