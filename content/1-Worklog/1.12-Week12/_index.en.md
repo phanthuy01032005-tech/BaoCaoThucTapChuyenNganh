@@ -1,39 +1,41 @@
 ---
-title: "Week 12: Relationships between AWS services"
+title: "Week 12: Container Deployment with Amazon Lightsail Containers"
 menuTitle: "Worklog Week 12"
-date: 2026-11-08
+date: 2026-11-02
 weight: 12
 chapter: false
-pre: " <b> 1.12. </b> "
+pre: " <b>1.12.</b> "
 ---
 
-## Relationships between AWS services
-
-**Period:** 26/10/2026–30/10/2026.
+**Period:** 2–6 November 2026
 
 ## Objectives
 
-- Understand how EC2, RDS, S3, Cognito and IAM work together in a web application.
-- Explain service choices and key cost controls.
+- Understand containers, container images and container services.
+- Study Lightsail container deployment configuration.
+- Read about public endpoints, application ports and health checks.
+- Summarize container application concepts through documentation.
 
-## Topics studied
+## Daily learning activities
 
-| Day | Learning activity | Start date | Completion date | Study source |
+| Day | Learning activity | Start date | Completion date | Reference |
 | --- | --- | --- | --- | --- |
-| Monday | Drew and described a browser, EC2, RDS, S3 and Cognito architecture. | 26/10/2026 | 26/10/2026 | [Cloud Journey – Relationships between AWS services](https://cloudjourney.awsfcaj.com/) |
-| Tuesday | Analyzed sign-in and data-access authorization flows. | 27/10/2026 | 27/10/2026 | [Cloud Journey – Relationships between AWS services](https://cloudjourney.awsfcaj.com/) |
-| Wednesday | Described files in S3, metadata in RDS and application execution on EC2. | 28/10/2026 | 28/10/2026 | [Cloud Journey – Relationships between AWS services](https://cloudjourney.awsfcaj.com/) |
-| Thursday | Reviewed least privilege, credential protection and connection restrictions. | 29/10/2026 | 29/10/2026 | [Cloud Journey – Relationships between AWS services](https://cloudjourney.awsfcaj.com/) |
-| Friday | Compared cost categories with AWS Budgets and managed resources. | 30/10/2026 | 30/10/2026 | [Cloud Journey – Relationships between AWS services](https://cloudjourney.awsfcaj.com/) |
+| Monday | Read an introduction to Lightsail Containers; study containers, images and the purpose of a container service. | 02/11/2026 | 02/11/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Tuesday | Study container service resource levels and node counts; read how configurations relate to application requirements. | 03/11/2026 | 03/11/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Wednesday | Read deployment configuration examples covering images, startup commands, environment variables and container ports. | 04/11/2026 | 04/11/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Thursday | Study public endpoints, the container receiving incoming traffic and health checks; read how these support access and application health monitoring. | 05/11/2026 | 05/11/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Friday | Summarize images, deployments and container services; read about deployment status, container logs, resources and costs. | 06/11/2026 | 06/11/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
 
-## Learning outcomes
+## Learning summary
 
-- Described an application architecture using the AWS services studied.
-- Explained component roles, relationships, security principles and costs.
-- Explained each component without confusing file storage with a database.
-- Distinguished Cognito authentication, business permissions and IAM resource permissions.
-- Understood separating processing, relational data and object storage.
-- Explained identity, network and data protection layers.
-- Identified cost sources and ways to track the learning budget.
+- Distinguished a container image from a running container.
+- Understood how a container service provides resources for deployments.
+- Recognized how resource levels and node counts affect service capacity.
+- Identified images, commands, environment variables and ports as deployment components.
+- Understood how a public endpoint directs incoming traffic to an application container.
+- Learned the purpose of health checks.
+- Distinguished deployment status from application log messages.
+- Understood the value of reviewing configuration, status and logs when researching application problems.
+- Studied documentation and sample configurations without creating a container service or deploying an application.
 
-After week 12, I explained how EC2, RDS, S3, Cognito and IAM relate.
+This week's reading helped me organize the concepts behind Lightsail container deployments. Across the 12 study weeks, I developed foundational knowledge of AWS accounts, costs, support, access management, networking, compute, storage, databases and application environments.
