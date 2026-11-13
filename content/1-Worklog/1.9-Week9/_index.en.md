@@ -1,39 +1,40 @@
 ---
-title: "Week 9: Amazon RDS backups and security"
+title: "Week 9: Static Website Hosting with Amazon S3"
 menuTitle: "Worklog Week 9"
-date: 2026-11-08
+date: 2026-10-12
 weight: 9
 chapter: false
-pre: " <b> 1.9. </b> "
+pre: " <b>1.9.</b> "
 ---
 
-## Amazon RDS backups and security
-
-**Period:** 05/10/2026–09/10/2026.
+**Period:** 12–16 October 2026
 
 ## Objectives
 
-- Understand RDS backups, snapshots and restoration.
-- Understand access restrictions and database connection protection.
+- Understand basic Amazon S3 concepts.
+- Study how static website files are organized in a bucket.
+- Read about static website hosting configuration.
+- Understand access permissions and common error categories.
 
-## Topics studied
+## Daily learning activities
 
-| Day | Learning activity | Start date | Completion date | Study source |
+| Day | Learning activity | Start date | Completion date | Reference |
 | --- | --- | --- | --- | --- |
-| Monday | Examined automated backups and retention periods. | 05/10/2026 | 05/10/2026 | [Cloud Journey – Amazon RDS backups and security](https://cloudjourney.awsfcaj.com/) |
-| Tuesday | Studied snapshots and database restoration. | 06/10/2026 | 06/10/2026 | [Cloud Journey – Amazon RDS backups and security](https://cloudjourney.awsfcaj.com/) |
-| Wednesday | Compared Single-AZ and Multi-AZ conceptually. | 07/10/2026 | 07/10/2026 | [Cloud Journey – Amazon RDS backups and security](https://cloudjourney.awsfcaj.com/) |
-| Thursday | Examined security groups, DB accounts and TLS connections. | 08/10/2026 | 08/10/2026 | [Cloud Journey – Amazon RDS backups and security](https://cloudjourney.awsfcaj.com/) |
-| Friday | Reviewed storage, snapshots and resources retained after stopping/deleting a DB. | 09/10/2026 | 09/10/2026 | [Cloud Journey – Amazon RDS backups and security](https://cloudjourney.awsfcaj.com/) |
+| Monday | Read an introduction to S3; study buckets, objects, object keys and metadata. | 12/10/2026 | 12/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Tuesday | Study static websites and their HTML, CSS, JavaScript and image files; read about directory organization and resource paths. | 13/10/2026 | 13/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Wednesday | Read the static website hosting instructions and study index documents, error documents and website endpoints. | 14/10/2026 | 14/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Thursday | Study S3 Block Public Access and bucket policies in the documented public website model; read how permissions affect access to content. | 15/10/2026 | 15/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Friday | Summarize the documented configuration process and study possible causes of Access Denied errors, missing index files and incorrect resource paths. | 16/10/2026 | 16/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
 
-## Learning outcomes
+## Learning summary
 
-- Explained backups, snapshots, restoration and the purpose of Multi-AZ.
-- Understood RDS security and cost-control principles.
-- Understood how retention policies affect data recovery.
-- Distinguished a backup from the DB instance restored from it.
-- Distinguished single-zone deployment from higher-availability deployment.
-- Understood network, authentication and transport-encryption controls.
-- Understood tracking retained data and related costs.
+- Understood how S3 stores objects in buckets.
+- Distinguished a bucket from an object key.
+- Understood that S3 static hosting serves files without executing server-side application code.
+- Learned the purposes of index and error documents.
+- Understood the role of a website endpoint.
+- Recognized the importance of matching file names and paths.
+- Distinguished permission errors from missing-file errors.
+- Studied documentation and examples without creating a bucket or deploying a website.
 
-After week 9, I understood RDS backup, restoration and security.
+This week's reading helped me connect file organization, hosting configuration and access permissions in a static website.
