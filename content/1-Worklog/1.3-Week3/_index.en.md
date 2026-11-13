@@ -1,39 +1,38 @@
 ---
-title: "Week 3: Amazon VPC and network components"
+title: "Week 3: Getting Help with AWS Support"
 menuTitle: "Worklog Week 3"
-date: 2026-11-08
+date: 2026-08-24
 weight: 3
 chapter: false
-pre: " <b> 1.3. </b> "
+pre: " <b>1.3.</b> "
 ---
 
-## Amazon VPC and network components
-
-**Period:** 24/08/2026–28/08/2026.
+**Period:** 24–28 August 2026
 
 ## Objectives
 
-- Understand how VPC provides a private network on AWS.
-- Understand subnets, routing and access-control layers.
+- Understand the role of AWS Support.
+- Study the documented process for requesting assistance.
+- Learn what information to prepare when describing a problem.
+- Distinguish account, billing and technical support needs.
 
-## Topics studied
+## Daily learning activities
 
-| Day | Learning activity | Start date | Completion date | Study source |
+| Day | Learning activity | Start date | Completion date | Reference |
 | --- | --- | --- | --- | --- |
-| Monday | Studied VPCs, CIDR blocks and subnet allocation. | 24/08/2026 | 24/08/2026 | [Cloud Journey – Amazon VPC and network components](https://cloudjourney.awsfcaj.com/) |
-| Tuesday | Examined public/private subnets and Availability Zones. | 25/08/2026 | 25/08/2026 | [Cloud Journey – Amazon VPC and network components](https://cloudjourney.awsfcaj.com/) |
-| Wednesday | Studied route tables and Internet Gateways. | 26/08/2026 | 26/08/2026 | [Cloud Journey – Amazon VPC and network components](https://cloudjourney.awsfcaj.com/) |
-| Thursday | Compared security groups with network ACLs. | 27/08/2026 | 27/08/2026 | [Cloud Journey – Amazon VPC and network components](https://cloudjourney.awsfcaj.com/) |
-| Friday | Read guidance on placing EC2 and databases in a VPC. | 28/08/2026 | 28/08/2026 | [Cloud Journey – Amazon VPC and network components](https://cloudjourney.awsfcaj.com/) |
+| Monday | Read an introduction to AWS Support and the categories of issues for which users may need assistance. | 24/08/2026 | 24/08/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Tuesday | Study the support plans described in the materials and compare their support coverage and access to technical assistance. | 25/08/2026 | 25/08/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Wednesday | Read instructions for accessing AWS Support Center and creating a support case; distinguish account, billing and technical issues. | 26/08/2026 | 26/08/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Thursday | Study how to describe an issue using the service, Region, occurrence time, error message and previous troubleshooting steps while protecting sensitive information. | 27/08/2026 | 27/08/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Friday | Explore the purposes of AWS Documentation, AWS re:Post and AWS Health Dashboard; summarize how to research an issue before requesting assistance. | 28/08/2026 | 28/08/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
 
-## Learning outcomes
+## Learning summary
 
-- Understood basic VPC components.
-- Explained the relationship between subnets, route tables and security groups.
-- Understood network addressing and address-space subdivision.
-- Distinguished subnets by routing configuration and connectivity.
-- Explained the basic route of Internet-bound traffic.
-- Distinguished their scope and traffic-handling behavior.
-- Understood separating application servers and databases to restrict access.
+- Understood the purpose of AWS Support.
+- Distinguished different categories of support requests.
+- Learned the documented process for creating and following a support case.
+- Understood that technical support coverage depends on the support plan.
+- Identified the information needed to describe a problem clearly.
+- Recognized the need to avoid sharing passwords or secret access keys.
 
-After week 3, I understood VPCs, subnets, routing and network security.
+This week's reading helped me organize the available support resources and develop a clearer approach to researching and describing technical problems.
