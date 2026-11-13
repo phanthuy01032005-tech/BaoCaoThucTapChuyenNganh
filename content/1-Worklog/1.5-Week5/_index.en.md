@@ -1,39 +1,39 @@
 ---
-title: "Week 5: Managing EC2, EBS and snapshots"
+title: "Week 5: Networking Essentials with Amazon VPC"
 menuTitle: "Worklog Week 5"
-date: 2026-11-08
+date: 2026-09-14
 weight: 5
 chapter: false
-pre: " <b> 1.5. </b> "
+pre: " <b>1.5.</b> "
 ---
 
-## Managing EC2, EBS and snapshots
-
-**Period:** 07/09/2026–11/09/2026.
+**Period:** 14–18 September 2026
 
 ## Objectives
 
-- Understand the EC2 lifecycle and storage management.
-- Understand data protection and resources that continue to incur charges.
+- Understand the purpose of Amazon Virtual Private Cloud.
+- Study IP addresses, CIDR blocks, subnets and Availability Zones.
+- Read about routing and Internet connectivity.
+- Compare Security Groups and Network ACLs.
 
-## Topics studied
+## Daily learning activities
 
-| Day | Learning activity | Start date | Completion date | Study source |
+| Day | Learning activity | Start date | Completion date | Reference |
 | --- | --- | --- | --- | --- |
-| Monday | Studied EC2 Start, Stop, Reboot and Terminate operations. | 07/09/2026 | 07/09/2026 | [Cloud Journey – Managing EC2, EBS and snapshots](https://cloudjourney.awsfcaj.com/) |
-| Tuesday | Examined EBS volumes and instance attachment. | 08/09/2026 | 08/09/2026 | [Cloud Journey – Managing EC2, EBS and snapshots](https://cloudjourney.awsfcaj.com/) |
-| Wednesday | Studied snapshots and volume backup use. | 09/09/2026 | 09/09/2026 | [Cloud Journey – Managing EC2, EBS and snapshots](https://cloudjourney.awsfcaj.com/) |
-| Thursday | Read guidance on creating AMIs and changing instance types. | 10/09/2026 | 10/09/2026 | [Cloud Journey – Managing EC2, EBS and snapshots](https://cloudjourney.awsfcaj.com/) |
-| Friday | Reviewed EC2, EBS, snapshot and IP address charges. | 11/09/2026 | 11/09/2026 | [Cloud Journey – Managing EC2, EBS and snapshots](https://cloudjourney.awsfcaj.com/) |
+| Monday | Read an introduction to Amazon VPC and study IPv4 addresses and CIDR notation through documentation examples. | 14/09/2026 | 14/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Tuesday | Study subnets, their relationship with Availability Zones and how a VPC address range is divided into smaller networks. | 15/09/2026 | 15/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Wednesday | Read about route tables and Internet Gateways; study destinations, routing targets and the routing characteristics of public subnets. | 16/09/2026 | 16/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Thursday | Study private subnets and NAT Gateways; read diagrams showing how resources in a private subnet initiate outbound Internet connections. | 17/09/2026 | 17/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Friday | Compare Security Groups and Network ACLs by scope and traffic handling; summarize the relationships between VPC components. | 18/09/2026 | 18/09/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
 
-## Learning outcomes
+## Learning summary
 
-- Distinguished instance lifecycles, EBS volumes, snapshots and AMIs.
-- Understood data and cost considerations when stopping or deleting servers.
-- Distinguished each operation’s effect on the server and its data.
-- Understood block storage and its relationship with the server.
-- Distinguished active volumes from backups used for recovery.
-- Understood preparation for changing or recreating a server.
-- Understood that stopping an instance does not stop every charge.
+- Understood that a VPC provides a logically isolated network.
+- Learned the purpose of CIDR blocks and subnets.
+- Understood that each subnet belongs to one Availability Zone.
+- Learned how route tables determine traffic paths.
+- Distinguished public subnets from private subnets by their routes to an Internet Gateway.
+- Understood the role of NAT Gateways in outbound connectivity.
+- Distinguished stateful Security Groups from stateless Network ACLs.
 
-After week 5, I understood EC2 lifecycles, EBS, snapshots and costs.
+Reading network diagrams helped me understand how addressing, routing and traffic controls work together within a VPC.
