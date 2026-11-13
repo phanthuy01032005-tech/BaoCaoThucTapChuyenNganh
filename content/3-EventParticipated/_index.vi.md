@@ -1,3 +1,12 @@
+---
+title: "Các sự kiện đã tham gia"
+menuTitle: "Các sự kiện đã tham gia"
+date: 2026-10-17
+weight: 3
+chapter: false
+pre: " <b>3.</b> "
+---
+
 ## Mini Meetup – First Cloud AI Journey
 
 ### Thông tin sự kiện
