@@ -1,7 +1,7 @@
 ---
 title: "Feedback and Suggestions"
 menuTitle: "Feedback and Suggestions"
-date: 2026-11-14
+date: 2026-11-13
 weight: 6
 chapter: false
 pre: " <b>6.</b> "
