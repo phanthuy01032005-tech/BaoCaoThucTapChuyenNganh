@@ -1,33 +1,49 @@
 ---
 title: "Worklog"
-date: 2026-11-08
+menuTitle: "Worklog"
+date: 2026-11-06
 weight: 1
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b>1.</b> "
 ---
 
-This worklog records **twelve learning weeks (10 August–30 October 2026)** during the Amazon Web Services internship. It focuses on First Cloud AI Journey materials and understanding AWS service functions, components, configuration, security and costs.
+## Introduction
 
-**Week 1:** [Understood AWS accounts, budgeting and support](1.1-Week1/)
+This worklog records my study of AWS documentation over 12 weeks, from 10 August to 6 November 2026. The week from 31 August to 6 September, which includes Vietnam's National Day on 2 September, is excluded from the 12 study weeks.
 
-**Week 2:** [Distinguished IAM users, groups, policies and roles](1.2-Week2/)
+The topics follow the order presented in the First Cloud AI Journey learning materials. Each weekly entry includes learning objectives, daily reading activities, references and a summary of the concepts studied.
 
-**Week 3:** [Understood VPCs, subnets, routing and network security](1.3-Week3/)
+## Learning topics over 12 weeks
 
-**Week 4:** [Understood EC2, AMIs, instance types and server connections](1.4-Week4/)
+| Week | Period | Topic |
+| --- | --- | --- |
+| [Week 1]({{< relref "/1-Worklog/1.1-Week1" >}}) | 10–14 August 2026 | Creating your first AWS account |
+| [Week 2]({{< relref "/1-Worklog/1.2-Week2" >}}) | 17–21 August 2026 | Managing costs with AWS Budgets |
+| [Week 3]({{< relref "/1-Worklog/1.3-Week3" >}}) | 24–28 August 2026 | Getting help with AWS Support |
+| [Week 4]({{< relref "/1-Worklog/1.4-Week4" >}}) | 7–11 September 2026 | Access management with AWS IAM |
+| [Week 5]({{< relref "/1-Worklog/1.5-Week5" >}}) | 14–18 September 2026 | Networking essentials with Amazon VPC |
+| [Week 6]({{< relref "/1-Worklog/1.6-Week6" >}}) | 21–25 September 2026 | Compute essentials with Amazon EC2 |
+| [Week 7]({{< relref "/1-Worklog/1.7-Week7" >}}) | 28 September–2 October 2026 | IAM Roles for EC2 |
+| [Week 8]({{< relref "/1-Worklog/1.8-Week8" >}}) | 5–9 October 2026 | Exploring the AWS Cloud9 development environment |
+| [Week 9]({{< relref "/1-Worklog/1.9-Week9" >}}) | 12–16 October 2026 | Static website hosting with Amazon S3 |
+| [Week 10]({{< relref "/1-Worklog/1.10-Week10" >}}) | 19–23 October 2026 | Database essentials with Amazon RDS |
+| [Week 11]({{< relref "/1-Worklog/1.11-Week11" >}}) | 26–30 October 2026 | Simplified computing with Amazon Lightsail |
+| [Week 12]({{< relref "/1-Worklog/1.12-Week12" >}}) | 2–6 November 2026 | Container deployment with Amazon Lightsail Containers |
 
-**Week 5:** [Understood EC2 lifecycles, EBS, snapshots and costs](1.5-Week5/)
+## Study approach
 
-**Week 6:** [Understood S3 storage and AWS CLI resource management](1.6-Week6/)
+- Read the documentation in topic order.
+- Take notes on the concepts, components and purpose of each service.
+- Study diagrams, instructions and sample configurations.
+- Compare concepts that are easy to confuse.
+- Summarize each week's learning and connect it to the next topic.
 
-**Week 7:** [Understood S3 security, CORS and presigned URL access](1.7-Week7/)
+## Summary
 
-**Week 8:** [Understood RDS MySQL and database connectivity](1.8-Week8/)
+During these 12 weeks, I studied the fundamentals of AWS accounts, cost management, support, access management, networking, compute, storage and relational databases. I also explored development environments and container deployment concepts through documentation.
 
-**Week 9:** [Understood RDS backup, restoration and security](1.9-Week9/)
+This study helped me develop my technical reading and note-taking skills and understand the relationships between AWS services. The activities focused on reading documentation and analysing examples rather than deploying resources or testing a project.
 
-**Week 10:** [Understood Cognito User Pools, app clients and users](1.10-Week10/)
+## References
 
-**Week 11:** [Understood Cognito sign-in flows and JWT validation](1.11-Week11/)
-
-**Week 12:** [Explained how EC2, RDS, S3, Cognito and IAM relate](1.12-Week12/)
+[First Cloud AI Journey](https://cloudjourney.awsfcaj.com/)
