@@ -22,9 +22,8 @@ chapter: false
 **Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
 
 **Thời gian thực tập:** Từ ngày 08/08/2026 đến ngày 14/11/2026
-
 <p style="text-align:center;">
-  <img src="/BaoCaoThucTapChuyenNganh/PhanThiThanhThuy.jpg.jpg"
+  <img src="https://phanthuy01032005-tech.github.io/BaoCaoThucTapChuyenNganh/PhanThiThanhThuy.jpg.jpg"
        alt="Phan Thị Thanh Thủy"
        width="300"
        style="max-width:100%;height:auto;">
