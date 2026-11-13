@@ -5,25 +5,23 @@ weight: 1
 chapter: false
 ---
 
-# Báo cáo thực tập
-
 ## Thông tin sinh viên
 
-**Họ và tên:** Trần Hải Lương
+**Họ và tên:** Phan Thị Thanh Thủy
 
-**Số điện thoại:** [0918285802](tel:0918285802)
+**Số điện thoại:** 0859158604
 
-**Email:** [tranhailuong0@gmail.com](mailto:tranhailuong0@gmail.com)
-
-**Lớp:** K68CNTTA
+**Email:** Phanthuy01032005@gmail.com
 
 **Trường:** Học viện Nông nghiệp Việt Nam
 
 **Ngành:** Công nghệ thông tin
 
-**Cơ sở thực tập:** Amazon Web Services
+**Lớp:** K68CNTTC
 
-**Thời gian thực tập:** Từ ngày 10/08/2026 đến ngày 30/10/2026.
+**Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
+
+**Thời gian thực tập:** Từ ngày 08/08/2026 đến ngày 14/11/2026
 
 <p style="text-align:center"><img src="/images/tran-hai-luong.png" alt="Trần Hải Lương" width="220" style="display:block;width:220px;max-width:100%;height:auto;margin:1.5rem auto" /></p>
 
