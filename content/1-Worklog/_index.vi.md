@@ -1,41 +1,49 @@
 ---
-title: "Tuần 9: Tìm hiểu hosting website tĩnh với Amazon S3"
-menuTitle: "Worklog Tuần 9"
-date: 2026-10-12
-weight: 9
+title: "Nhật kí công việc"
+menuTitle: "Nhật kí công việc"
+date: 2026-11-06
+weight: 1
 chapter: false
-pre: " <b>1.9.</b> "
+pre: " <b>1.</b> "
 ---
 
-**Thời gian:** 12/10/2026–16/10/2026
+## Giới thiệu
 
-## Mục tiêu
+Nhật kí ghi lại quá trình tìm hiểu tài liệu AWS của em trong 12 tuần, bắt đầu từ ngày 10/08/2026 đến ngày 06/11/2026. Tuần từ ngày 31/08/2026 đến ngày 06/09/2026 có ngày lễ Quốc khánh 02/09 không được tính vào 12 tuần học tập.
 
-- Tìm hiểu các khái niệm cơ bản của Amazon S3.
-- Đọc cách tổ chức các tệp của website tĩnh trong S3 bucket.
-- Tìm hiểu cấu hình static website hosting qua tài liệu.
-- Hiểu vai trò của quyền truy cập và cách nhận biết một số lỗi thường gặp.
+Nội dung được sắp xếp theo thứ tự các chủ đề trong tài liệu First Cloud AI Journey. Mỗi tuần gồm mục tiêu học tập, nội dung đọc tài liệu theo từng ngày, nguồn tham khảo và tổng kết kiến thức.
 
-## Nội dung học tập trong tuần
+## Nội dung học tập trong 12 tuần
 
-| Thứ | Nội dung học tập | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
-| --- | --- | --- | --- | --- |
-| 2 | Đọc phần giới thiệu Amazon S3; tìm hiểu bucket, object, object key và metadata; ghi chép cách tổ chức dữ liệu trong bucket. | 12/10/2026 | 12/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
-| 3 | Tìm hiểu website tĩnh và các thành phần HTML, CSS, JavaScript, hình ảnh; đọc cách sắp xếp tệp và xác định đường dẫn tài nguyên. | 13/10/2026 | 13/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
-| 4 | Đọc hướng dẫn static website hosting trên S3; tìm hiểu mục đích của index document, error document và website endpoint. | 14/10/2026 | 14/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
-| 5 | Tìm hiểu S3 Block Public Access và bucket policy trong mô hình website công khai; đọc cách quyền truy cập ảnh hưởng đến khả năng xem nội dung website. | 15/10/2026 | 15/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
-| 6 | Tổng hợp quy trình cấu hình được mô tả trong tài liệu; tìm hiểu các nguyên nhân có thể gây lỗi Access Denied, thiếu trang index hoặc sai đường dẫn tệp. | 16/10/2026 | 16/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| Tuần | Thời gian | Chủ đề |
+| --- | --- | --- |
+| [Tuần 1]({{< relref "/1-Worklog/1.1-Week1" >}}) | 10/08/2026–14/08/2026 | Tìm hiểu cách tạo tài khoản AWS đầu tiên |
+| [Tuần 2]({{< relref "/1-Worklog/1.2-Week2" >}}) | 17/08/2026–21/08/2026 | Tìm hiểu quản lý chi phí với AWS Budgets |
+| [Tuần 3]({{< relref "/1-Worklog/1.3-Week3" >}}) | 24/08/2026–28/08/2026 | Tìm hiểu hỗ trợ kỹ thuật với AWS Support |
+| [Tuần 4]({{< relref "/1-Worklog/1.4-Week4" >}}) | 07/09/2026–11/09/2026 | Tìm hiểu quản lý truy cập với AWS IAM |
+| [Tuần 5]({{< relref "/1-Worklog/1.5-Week5" >}}) | 14/09/2026–18/09/2026 | Tìm hiểu kiến thức mạng cơ bản với Amazon VPC |
+| [Tuần 6]({{< relref "/1-Worklog/1.6-Week6" >}}) | 21/09/2026–25/09/2026 | Tìm hiểu kiến thức máy chủ ảo với Amazon EC2 |
+| [Tuần 7]({{< relref "/1-Worklog/1.7-Week7" >}}) | 28/09/2026–02/10/2026 | Tìm hiểu IAM Roles for EC2 |
+| [Tuần 8]({{< relref "/1-Worklog/1.8-Week8" >}}) | 05/10/2026–09/10/2026 | Tìm hiểu môi trường phát triển AWS Cloud9 |
+| [Tuần 9]({{< relref "/1-Worklog/1.9-Week9" >}}) | 12/10/2026–16/10/2026 | Tìm hiểu hosting website tĩnh với Amazon S3 |
+| [Tuần 10]({{< relref "/1-Worklog/1.10-Week10" >}}) | 19/10/2026–23/10/2026 | Tìm hiểu kiến thức cơ sở dữ liệu với Amazon RDS |
+| [Tuần 11]({{< relref "/1-Worklog/1.11-Week11" >}}) | 26/10/2026–30/10/2026 | Tìm hiểu đơn giản hóa điện toán với Amazon Lightsail |
+| [Tuần 12]({{< relref "/1-Worklog/1.12-Week12" >}}) | 02/11/2026–06/11/2026 | Tìm hiểu triển khai container với Amazon Lightsail Containers |
 
-## Tổng kết kiến thức
+## Phương pháp học tập
 
-- Hiểu Amazon S3 lưu trữ dữ liệu dưới dạng object trong bucket.
-- Phân biệt bucket là nơi chứa dữ liệu, còn object key xác định đối tượng bên trong bucket.
-- Hiểu website tĩnh cung cấp các tệp nội dung cho trình duyệt và không chạy mã xử lý phía máy chủ trên S3.
-- Nắm được mục đích của index document và error document qua tài liệu.
-- Hiểu website endpoint là địa chỉ truy cập website tĩnh do S3 cung cấp.
-- Nhận biết tên tệp và đường dẫn phải khớp với tài nguyên được tham chiếu trong trang.
-- Hiểu quyền đọc object ảnh hưởng đến khả năng truy cập nội dung website.
-- Phân biệt lỗi do quyền truy cập với lỗi do thiếu tệp hoặc sai đường dẫn.
-- Nội dung tuần tập trung đọc tài liệu và phân tích ví dụ, không thực hiện tạo bucket hoặc triển khai website.
+- Đọc lần lượt các chủ đề trong tài liệu.
+- Ghi chép khái niệm, thành phần và mục đích sử dụng của từng dịch vụ.
+- Phân tích các sơ đồ, hướng dẫn và cấu hình mẫu.
+- So sánh những khái niệm dễ nhầm lẫn.
+- Tổng hợp kiến thức sau mỗi tuần để làm nền tảng cho chủ đề tiếp theo.
 
-Qua tuần học thứ chín, em đã hệ thống hóa kiến thức về Amazon S3 và mô hình lưu trữ website tĩnh. Việc đọc tài liệu giúp em hiểu mối liên hệ giữa cấu trúc tệp, cấu hình hosting và quyền truy cập khi cung cấp nội dung website.tài liệu giúp em hiểu mối liên hệ giữa cấu trúc tệp, cấu hình hosting và quyền truy cập khi cung cấp nội dung website.
+## Tổng kết
+
+Qua 12 tuần đọc tài liệu, em đã hệ thống hóa kiến thức nền tảng về AWS, từ quản lý tài khoản, chi phí và quyền truy cập đến mạng, máy chủ, lưu trữ và cơ sở dữ liệu. Em đồng thời tìm hiểu môi trường phát triển và cách tổ chức ứng dụng dạng container qua các hướng dẫn.
+
+Quá trình học tập giúp em rèn luyện kỹ năng tra cứu tài liệu kỹ thuật, ghi chép và liên kết kiến thức giữa các dịch vụ.
+
+## Tài liệu tham khảo
+
+[First Cloud AI Journey](https://cloudjourney.awsfcaj.com/)
