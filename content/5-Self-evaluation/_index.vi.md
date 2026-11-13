@@ -1,7 +1,7 @@
 ---
 title: "Tự đánh giá"
 menuTitle: "Tự đánh giá"
-date: 2026-11-14
+date: 2026-11-13
 weight: 5
 chapter: false
 pre: " <b>5.</b> "
