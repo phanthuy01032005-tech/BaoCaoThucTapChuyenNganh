@@ -1,4 +1,4 @@
-baseURL = "https://hluongTr.github.io/BaoCaoThucTap/"
+baseURL = "https://phanthuy01032005-tech.github.io/BaoCaoThucTapChuyenNganh/"
 relativeURLs = true
 canonifyURLs = true
 defaultContentLanguage = "vi"
@@ -11,8 +11,8 @@ home = [ "HTML", "RSS", "JSON"]
 [params]
   themeVariant = "workshop"
   editURL = ""
-  description = "CloudDocs — Báo cáo thực tập Trần Hải Lương"
-  author = "Trần Hải Lương"
+description = "CloudDocs — Báo cáo thực tập Phan Thị Thanh Thủy"
+ author = "Phan Thị Thanh Thủy"
   showVisitedLinks = false
   disableBreadcrumb = false
   disableNextPrev = false
