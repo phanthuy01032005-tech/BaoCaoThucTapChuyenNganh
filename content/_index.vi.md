@@ -23,7 +23,12 @@ chapter: false
 
 **Thời gian thực tập:** Từ ngày 08/08/2026 đến ngày 14/11/2026
 
-<p style="text-align:center"><img src="/images/tran-hai-luong.png" alt="Trần Hải Lương" width="220" style="display:block;width:220px;max-width:100%;height:auto;margin:1.5rem auto" /></p>
+<p style="text-align:center;">
+  <img src="/BaoCaoThucTapChuyenNganh/PhanThiThanhThuy.jpg.jpg"
+       alt="Phan Thị Thanh Thủy"
+       width="300"
+       style="max-width:100%;height:auto;">
+</p>
 
 ## Nội dung báo cáo
 
