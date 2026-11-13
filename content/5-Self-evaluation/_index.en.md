@@ -1,46 +1,54 @@
----
-title: "Self-evaluation"
-date: 2026-11-07
-weight: 5
-chapter: false
-pre: " <b> 5. </b> "
----
+## Knowledge gained
 
-My name is **Trần Hải Lương**, class **K68CNTTA**. I undertook my internship in the **First Cloud AI Journey program at AWS Vietnam**, from **10 August 2026 to 30 October 2026**.
+During my internship, I spent 12 weeks studying AWS documentation in the topic order presented in First Cloud AI Journey. This study helped me build foundational cloud computing knowledge and understand the purposes of the services introduced.
 
-My objectives were to strengthen my AWS foundations, develop independent learning skills and connect my knowledge with the CloudDocs document management system. By studying IAM, VPC, EC2, S3, RDS and Cognito, I gradually understood how components work together in an application with authentication, storage and authorization.
+I studied AWS account creation and protection, cost monitoring with AWS Budgets and ways to find assistance through AWS Support. These topics helped me understand the importance of protecting account information and monitoring costs.
 
-My assessment considers my learning attitude, work habits and application of knowledge to the project. My technical knowledge remains foundational and requires further practice; the ratings below represent my personal assessment.
+Through IAM, VPC and EC2 documentation, I learned about identities, permissions, networking and virtual servers. Studying IAM Roles for EC2 helped me connect access management concepts with how applications obtain temporary credentials.
 
-| No. | Criterion | Description | Good | Fairly good | Average |
-| --- | --- | --- | --- | --- | --- |
-| 1 | Technical knowledge and skills | Industry knowledge, practical application, tool proficiency and work quality | ☐ | ☐ | ☑ |
-| 2 | Learning ability | Acquiring new knowledge and learning quickly | ☐ | ☑ | ☐ |
-| 3 | Initiative | Researching independently and taking on tasks without waiting for instructions | ☑ | ☐ | ☐ |
-| 4 | Responsibility | Completing work on time and ensuring quality | ☑ | ☐ | ☐ |
-| 5 | Discipline | Following working hours, rules and procedures | ☑ | ☐ | ☐ |
-| 6 | Willingness to improve | Accepting feedback and improving oneself | ☑ | ☐ | ☐ |
-| 7 | Communication | Presenting ideas and reporting work clearly | ☐ | ☑ | ☐ |
-| 8 | Teamwork | Working effectively with colleagues and participating in the group | ☑ | ☐ | ☐ |
-| 9 | Professional conduct | Respecting colleagues, partners and the workplace | ☑ | ☐ | ☐ |
-| 10 | Problem-solving | Identifying problems, proposing solutions and thinking creatively | ☐ | ☑ | ☐ |
-| 11 | Contribution to the project/organization | Work effectiveness, improvement initiatives and value to the team | ☑ | ☐ | ☐ |
-| 12 | Overall | Overall assessment of the internship | ☐ | ☑ | ☐ |
+I also explored AWS Cloud9, Amazon S3, Amazon RDS, Amazon Lightsail and Lightsail Containers through documentation, diagrams and sample configurations.
 
-## Strengths developed during learning
+## Skills developed
 
-- Independently reading Cloud Journey materials, exploring service settings and comparing them with CloudDocs workflows.
-- Taking responsibility for learning, accepting feedback and improving reports and practice documentation.
-- Connecting database, networking and web development knowledge with Cognito authentication, S3 storage and EC2/RDS connections.
-- Contributing to application functions, checking business workflows and organizing project evidence.
+### Reading and researching documentation
 
-## Areas to improve for future projects
+I practised identifying relevant sections, recording unfamiliar terms and comparing related explanations. When studying a new concept, I focused on its purpose before examining configuration details.
 
-- **Technical knowledge:** deepen my understanding of IAM, networking, security and operations; I still need guidance when addressing unfamiliar situations.
-- **Learning ability:** balance practice and revision more effectively to retain knowledge over time.
-- **Technical communication:** describe problems concisely, including settings, error messages and attempted steps, to make discussions more effective.
-- **Problem-solving:** investigate causes by layer, test hypotheses and record results instead of changing multiple settings at once.
+### Taking notes and summarizing knowledge
 
-## Direction after the internship
+I organized my learning by week, recorded daily reading activities and summarized the main concepts. This approach helped me track my progress and review previous topics.
 
-I would like to develop further in **Backend / Cloud**, strengthen my AWS knowledge and practice authorization, service connectivity, integration testing and cost management. CloudDocs provides a foundation for improving my ability to deploy and operate a practical application.
+### Comparing and connecting concepts
+
+I practised distinguishing concepts that are easy to confuse, including authentication and authorization, IAM users and roles, public and private subnets, stopping and terminating EC2 instances, and database backups and availability.
+
+### Reading technical English
+
+Working with service names, terminology and English documentation helped me expand my technical vocabulary. I still need more practice to improve my reading speed and accuracy.
+
+## Learning attitude
+
+I focused on following the reading sequence, taking useful notes and maintaining my worklog. When summarizing my learning, I distinguished concepts studied through documentation from activities performed in practice.
+
+I recognize that understanding concepts is an initial step. Further practice is necessary to develop confidence in using AWS services.
+
+## Limitations
+
+- My knowledge is mainly based on reading documentation and analysing examples.
+- I have limited practical experience with the services in real environments.
+- My technical English reading skills need further improvement.
+- Networking, IAM policies and container configuration require additional review.
+- I need more practice explaining technical concepts through clear, concise examples.
+
+## Improvement plan
+
+- Review the topics studied and create notes showing the relationships between services.
+- Continue reading official documentation to keep my knowledge current.
+- Practise technical English and maintain a personal glossary.
+- Before future practical exercises, define learning objectives, access permissions and cost limits.
+- Record practical results, problems and solutions, then compare them with the documentation.
+- Continue participating in relevant community activities to learn and exchange knowledge.
+
+## Overall reflection
+
+This learning period helped me establish an initial foundation in AWS and develop a more organized approach to independent study. I plan to strengthen this knowledge and gain practical experience so that I can apply it more effectively in future study and work.
