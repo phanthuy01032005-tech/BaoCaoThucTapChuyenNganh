@@ -1,39 +1,41 @@
 ---
-title: "Tuần 10: Amazon Cognito và quản lý người dùng"
+title: "Tuần 10: Tìm hiểu kiến thức cơ sở dữ liệu với Amazon RDS"
 menuTitle: "Worklog Tuần 10"
-date: 2026-11-08
+date: 2026-10-19
 weight: 10
 chapter: false
-pre: " <b> 1.10. </b> "
+pre: " <b>1.10.</b> "
 ---
 
-## Amazon Cognito và quản lý người dùng
-
-**Thời gian:** 12/10/2026–16/10/2026.
+**Thời gian:** 19/10/2026–23/10/2026
 
 ## Mục tiêu
 
-- Hiểu vai trò Cognito trong xác thực người dùng ứng dụng.
-- Phân biệt User Pool, App Client và danh tính trong IAM.
+- Tìm hiểu vai trò của Amazon Relational Database Service.
+- Đọc các thành phần cấu hình cơ bản của một cơ sở dữ liệu trên RDS.
+- Tìm hiểu kết nối mạng, kiểm soát truy cập và bảo vệ dữ liệu.
+- Phân biệt mục đích của sao lưu, khôi phục và tăng tính sẵn sàng.
 
-## Nội dung đã tìm hiểu
+## Nội dung học tập trong tuần
 
 | Thứ | Nội dung học tập | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | Tìm hiểu tổng quan Amazon Cognito và User Pool. | 12/10/2026 | 12/10/2026 | [Cloud Journey – Amazon Cognito và quản lý người dùng](https://cloudjourney.awsfcaj.com/) |
-| 3 | Nghiên cứu App Client và cấu hình ứng dụng web. | 13/10/2026 | 13/10/2026 | [Cloud Journey – Amazon Cognito và quản lý người dùng](https://cloudjourney.awsfcaj.com/) |
-| 4 | Đọc hướng dẫn tạo người dùng, xác nhận tài khoản và mật khẩu ban đầu. | 14/10/2026 | 14/10/2026 | [Cloud Journey – Amazon Cognito và quản lý người dùng](https://cloudjourney.awsfcaj.com/) |
-| 5 | Tìm hiểu domain đăng nhập, callback URL và logout URL. | 15/10/2026 | 15/10/2026 | [Cloud Journey – Amazon Cognito và quản lý người dùng](https://cloudjourney.awsfcaj.com/) |
-| 6 | Phân biệt người dùng Cognito với IAM User và tài khoản DB. | 16/10/2026 | 16/10/2026 | [Cloud Journey – Amazon Cognito và quản lý người dùng](https://cloudjourney.awsfcaj.com/) |
+| 2 | Đọc phần giới thiệu Amazon RDS; tìm hiểu cơ sở dữ liệu quan hệ, DB instance và các hệ quản trị cơ sở dữ liệu được giới thiệu trong tài liệu. | 19/10/2026 | 19/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| 3 | Tìm hiểu DB instance class, dung lượng lưu trữ và thông tin kết nối; đọc ý nghĩa của endpoint, cổng kết nối và tài khoản cơ sở dữ liệu. | 20/10/2026 | 20/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| 4 | Đọc về VPC, DB subnet group và Security Group trong cấu hình RDS; tìm hiểu các điều kiện mạng ảnh hưởng đến kết nối cơ sở dữ liệu. | 21/10/2026 | 21/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| 5 | Tìm hiểu sao lưu tự động, thời gian lưu giữ bản sao lưu và DB snapshot; đọc quy trình khôi phục dữ liệu được mô tả trong tài liệu. | 22/10/2026 | 22/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
+| 6 | Đọc tổng quan về Multi-AZ và Read Replica; phân biệt mục đích tăng tính sẵn sàng với hỗ trợ mở rộng khả năng đọc; tổng hợp kiến thức trong tuần. | 23/10/2026 | 23/10/2026 | [First Cloud AI Journey](https://cloudjourney.awsfcaj.com/) |
 
-## Kết quả đạt được
+## Tổng kết kiến thức
 
-- Đã nắm vai trò User Pool, App Client và cấu hình đăng nhập.
-- Đã phân biệt được danh tính người dùng ứng dụng với danh tính quản trị tài nguyên AWS.
-- Đã hiểu nơi lưu danh tính người dùng và vai trò của dịch vụ xác thực.
-- Đã hiểu mối liên hệ giữa ứng dụng và User Pool.
-- Đã hiểu các trạng thái tài khoản và bước hoàn tất đăng nhập lần đầu.
-- Đã hiểu vì sao địa chỉ chuyển hướng phải khớp cấu hình ứng dụng.
-- Đã hiểu rằng các loại danh tính phục vụ mục đích truy cập khác nhau.
+- Hiểu Amazon RDS là dịch vụ hỗ trợ quản lý cơ sở dữ liệu quan hệ trên AWS.
+- Nhận biết các thành phần cấu hình cơ bản gồm hệ quản trị cơ sở dữ liệu, DB instance class và lưu trữ.
+- Hiểu endpoint và cổng kết nối là những thông tin cần thiết để xác định địa chỉ truy cập cơ sở dữ liệu.
+- Nắm được mối liên hệ giữa VPC, DB subnet group và Security Group trong tổ chức kết nối mạng.
+- Phân biệt quyền kết nối mạng với việc xác thực và phân quyền bên trong cơ sở dữ liệu.
+- Hiểu mục đích của sao lưu tự động và DB snapshot.
+- Nhận biết việc khôi phục cần lựa chọn bản sao lưu hoặc thời điểm khôi phục phù hợp theo cơ chế được hỗ trợ.
+- Phân biệt mục đích chính của Multi-AZ là tăng tính sẵn sàng, còn Read Replica thường phục vụ mở rộng khả năng đọc.
+- Nội dung tuần tập trung đọc tài liệu và phân tích cấu hình mẫu, không thực hiện tạo DB instance hoặc kết nối cơ sở dữ liệu thực tế.
 
-Sau tuần 10, em đã hiểu Cognito User Pool, App Client và người dùng.
+Qua tuần học thứ mười, em đã hệ thống hóa kiến thức cơ bản về Amazon RDS, từ cấu hình cơ sở dữ liệu đến kết nối mạng và bảo vệ dữ liệu. Nội dung học giúp em hiểu rõ hơn sự khác nhau giữa sao lưu, khôi phục, tăng tính sẵn sàng và mở rộng khả năng đọc.
