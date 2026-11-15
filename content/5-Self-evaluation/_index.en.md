@@ -1,63 +1,59 @@
 ---
 title: "Self-assessment"
 menuTitle: "Self-assessment"
-date: 2026-11-13
+date: 2026-11-14
 weight: 5
 chapter: false
 pre: " <b>5.</b> "
 ---
 
-## Knowledge gained
+During my internship at **Amazon Web Services Vietnam Company Limited**, from **8 August to 14 November 2026**, I studied foundational AWS concepts through First Cloud AI Journey materials.
 
-During my internship, I spent 12 weeks studying AWS documentation in the topic order presented in First Cloud AI Journey. This helped me build foundational cloud knowledge and understand the purposes of the services introduced.
+My 12-week worklog focused on reading documentation, studying diagrams, analysing sample configurations and summarizing knowledge. The topics covered AWS accounts, cost management, support, access management, networking, virtual servers, storage, databases and containers.
 
-I studied AWS account creation and protection, cost monitoring with AWS Budgets and ways to find assistance through AWS Support.
+This learning process helped me develop independent study habits, technical research skills and technical English reading skills. I also recognized the need for practical experience to deepen my understanding and apply the concepts effectively.
 
-Through IAM, VPC and EC2 documentation, I learned about identities, permissions, networking and virtual servers. Studying IAM Roles for EC2 helped me understand how applications obtain temporary credentials.
+The following table presents my self-assessment at the end of the internship.
 
-I also explored AWS Cloud9, Amazon S3, Amazon RDS, Amazon Lightsail and Lightsail Containers through documentation, diagrams and sample configurations.
+## Self-assessment table
 
-## Skills developed
+| No. | Criterion | Self-assessment | Good | Fair | Average |
+| --- | --- | --- | :---: | :---: | :---: |
+| 1 | AWS knowledge | Understand the purposes and basic components of the services studied; further practice is needed. | ☐ | ☐ | ☑ |
+| 2 | Learning ability | Can take notes and explain the main concepts after studying the documentation. | ☐ | ☑ | ☐ |
+| 3 | Independent study | Research unfamiliar terms and revisit topics that require clarification. | ☐ | ☑ | ☐ |
+| 4 | Learning organization | Organize topics by week and track progress through a learning worklog. | ☐ | ☑ | ☐ |
+| 5 | Attention to detail | Check service names, terminology and dates when preparing the report. | ☐ | ☑ | ☐ |
+| 6 | Openness to feedback | Willing to review suggestions and correct incomplete or inaccurate content. | ☐ | ☑ | ☐ |
+| 7 | Knowledge presentation | Can organize learning into objectives, daily activities and summaries. | ☐ | ☑ | ☐ |
+| 8 | Technical English | Understand familiar terms but still need reference materials for complex content. | ☐ | ☐ | ☑ |
+| 9 | Security awareness | Understand the importance of MFA, credential protection and least privilege. | ☐ | ☑ | ☐ |
+| 10 | Conceptual analysis | Can distinguish and connect basic components across IAM, VPC, EC2 and other services. | ☐ | ☑ | ☐ |
+| 11 | Practical application | Have a theoretical foundation but need more experience with deployment and troubleshooting. | ☐ | ☐ | ☑ |
+| 12 | Overall assessment | Completed the learning summaries and identified areas for further study and practice. | ☐ | ☑ | ☐ |
 
-### Reading and researching documentation
+## Areas for improvement
 
-I practised identifying relevant sections, recording unfamiliar terms and comparing related explanations. I focused on a concept's purpose before studying its configuration.
+### Strengthening technical knowledge
 
-### Taking notes and summarizing
+I need to review VPC networking, IAM policies and the relationships between AWS components in greater depth. I will use diagrams and examples to check my understanding.
 
-I organized my learning by week, recorded daily reading activities and summarized the main concepts. This helped me track my progress and review previous topics.
+### Developing practical skills
 
-### Comparing and connecting concepts
+My current knowledge mainly comes from documentation. I plan to practise through small exercises, define access permissions and cost limits before creating resources, and clean up resources afterwards.
 
-I practised distinguishing authentication from authorization, IAM users from roles, public from private subnets, and stopping from terminating EC2 instances.
+### Improving technical English
 
-### Reading technical English
+I will continue reading English documentation, maintain a personal glossary and practise summarizing concepts in my own words.
 
-Reading terminology and English documentation helped me expand my technical vocabulary. Further practice is needed to improve my reading speed and accuracy.
+### Developing problem analysis skills
 
-## Learning attitude
+I need to practise identifying symptoms, gathering relevant information and researching possible causes in a structured way. During future practical exercises, I will record problems and solutions and compare them with the documentation.
 
-I focused on following the reading sequence, taking useful notes and maintaining my worklog. I distinguished concepts studied through documentation from activities performed in practice.
+### Improving presentation skills
 
-I recognize that understanding concepts is an initial step and that practical experience is necessary to develop proficiency.
+I need to explain concepts more concisely, use specific examples and clearly distinguish topics studied from activities performed in practice.
 
-## Limitations
+## Direction after the internship
 
-- My knowledge is mainly based on reading documentation and analysing examples.
-- My practical experience with AWS services is limited.
-- My technical English reading skills need improvement.
-- Networking, IAM policies and container configuration require further review.
-- I need more practice explaining concepts through concise examples.
-
-## Improvement plan
-
-- Review the topics and create diagrams showing relationships between services.
-- Continue reading official documentation.
-- Practise technical English and maintain a personal glossary.
-- Before practical exercises, define objectives, permissions and cost limits.
-- Record practical results, problems and solutions.
-- Participate in relevant community learning activities.
-
-## Overall reflection
-
-This learning period helped me establish an initial foundation in AWS and develop a more organized approach to independent study. I plan to strengthen this knowledge and gain practical experience for future study and work. establish an initial foundation in AWS and develop a more organized approach to independent study. I plan to strengthen this knowledge and gain practical experience so that I can apply it more effectively in future study and work.
+I will continue building on this foundation to deepen my AWS knowledge. My next goal is to combine documentation study with controlled practical exercises so that I can apply the concepts more effectively in future study and work.re study and work. establish an initial foundation in AWS and develop a more organized approach to independent study. I plan to strengthen this knowledge and gain practical experience so that I can apply it more effectively in future study and work.
