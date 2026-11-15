@@ -56,4 +56,4 @@ Em cần diễn đạt ngắn gọn, sử dụng ví dụ cụ thể và phân b
 
 ## Định hướng sau thực tập
 
-Em sẽ tiếp tục sử dụng kiến thức đã học làm nền tảng để tìm hiểu sâu hơn về AWS. Mục tiêu tiếp theo là kết hợp đọc tài liệu với thực hành có kiểm soát, từ đó nâng cao khả năng vận dụng trong học tập và công việc.ụng tốt hơn trong học tập và công việc.
+Em sẽ tiếp tục sử dụng kiến thức đã học làm nền tảng để tìm hiểu sâu hơn về AWS. Mục tiêu tiếp theo là kết hợp đọc tài liệu với thực hành có kiểm soát, từ đó nâng cao khả năng vận dụng trong học tập và công việc.
