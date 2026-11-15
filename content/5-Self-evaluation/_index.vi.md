@@ -1,63 +1,59 @@
 ---
 title: "Tự đánh giá"
 menuTitle: "Tự đánh giá"
-date: 2026-11-13
+date: 2026-11-14
 weight: 5
 chapter: false
 pre: " <b>5.</b> "
 ---
 
-## Kiến thức đã tích lũy
+Trong thời gian thực tập tại **Công ty TNHH Amazon Web Services Viet Nam**, từ ngày **08/08/2026 đến ngày 14/11/2026**, em đã tìm hiểu kiến thức nền tảng về AWS thông qua tài liệu First Cloud AI Journey.
 
-Trong thời gian thực tập, em đã dành 12 tuần tìm hiểu tài liệu AWS theo thứ tự các chủ đề trong First Cloud AI Journey. Quá trình học giúp em xây dựng kiến thức nền tảng về điện toán đám mây và hiểu mục đích sử dụng của các dịch vụ được giới thiệu.
+Nội dung nhật kí 12 tuần tập trung vào việc đọc tài liệu, phân tích sơ đồ, tìm hiểu cấu hình mẫu và tổng hợp kiến thức. Các chủ đề bao gồm tài khoản AWS, quản lý chi phí, hỗ trợ, phân quyền, mạng, máy chủ ảo, lưu trữ, cơ sở dữ liệu và container.
 
-Em đã tìm hiểu quy trình tạo và bảo vệ tài khoản AWS, theo dõi chi phí với AWS Budgets và tìm kiếm hỗ trợ qua AWS Support.
+Quá trình học giúp em rèn luyện phương pháp tự học, kỹ năng tra cứu tài liệu kỹ thuật và đọc hiểu tiếng Anh chuyên ngành. Em cũng nhận thấy cần bổ sung trải nghiệm thực hành để hiểu sâu và vận dụng kiến thức hiệu quả hơn.
 
-Qua các chủ đề IAM, VPC và EC2, em hiểu thêm về quản lý danh tính, phân quyền, tổ chức mạng và máy chủ ảo. Nội dung IAM Roles for EC2 giúp em liên kết kiến thức về quyền truy cập với cách ứng dụng nhận thông tin xác thực tạm thời.
+Dưới đây là phần tự đánh giá của em sau thời gian thực tập.
 
-Em cũng tìm hiểu AWS Cloud9, Amazon S3, Amazon RDS, Amazon Lightsail và Lightsail Containers thông qua tài liệu, sơ đồ và cấu hình mẫu.
+## Bảng tự đánh giá
 
-## Kỹ năng đã rèn luyện
+| STT | Tiêu chí | Nội dung tự đánh giá | Tốt | Khá | Trung bình |
+| --- | --- | --- | :---: | :---: | :---: |
+| 1 | Kiến thức AWS | Nhận biết mục đích và các thành phần cơ bản của những dịch vụ đã học; cần củng cố thêm bằng thực hành. | ☐ | ☐ | ☑ |
+| 2 | Tiếp thu kiến thức | Có thể đọc, ghi chép và giải thích lại các khái niệm chính sau khi tìm hiểu tài liệu. | ☐ | ☑ | ☐ |
+| 3 | Tự học | Chủ động tra cứu thuật ngữ và đọc lại những nội dung chưa hiểu rõ. | ☐ | ☑ | ☐ |
+| 4 | Tổ chức việc học | Chia nội dung theo tuần và theo dõi tiến độ thông qua nhật kí học tập. | ☐ | ☑ | ☐ |
+| 5 | Tính cẩn thận | Chú ý kiểm tra tên dịch vụ, thuật ngữ và thời gian khi tổng hợp báo cáo. | ☐ | ☑ | ☐ |
+| 6 | Tiếp nhận góp ý | Sẵn sàng xem xét góp ý và điều chỉnh nội dung còn thiếu hoặc chưa chính xác. | ☐ | ☑ | ☐ |
+| 7 | Trình bày kiến thức | Có thể tổng hợp nội dung thành mục tiêu, hoạt động theo ngày và phần tổng kết. | ☐ | ☑ | ☐ |
+| 8 | Tiếng Anh chuyên ngành | Hiểu được các thuật ngữ quen thuộc nhưng vẫn cần tra cứu khi gặp nội dung phức tạp. | ☐ | ☐ | ☑ |
+| 9 | Nhận thức bảo mật | Hiểu sự cần thiết của MFA, bảo vệ thông tin xác thực và cấp quyền tối thiểu. | ☐ | ☑ | ☐ |
+| 10 | Phân tích khái niệm | Bước đầu phân biệt và liên kết các thành phần giữa IAM, VPC, EC2 và các dịch vụ khác. | ☐ | ☑ | ☐ |
+| 11 | Khả năng vận dụng | Có nền tảng lý thuyết nhưng chưa đủ trải nghiệm để tự triển khai và xử lý tình huống thực tế. | ☐ | ☐ | ☑ |
+| 12 | Đánh giá chung | Hoàn thành việc tổng hợp nội dung học tập; cần tiếp tục nâng cao kiến thức và kỹ năng thực hành. | ☐ | ☑ | ☐ |
 
-### Đọc và tra cứu tài liệu
+## Những điểm cần cải thiện
 
-Em rèn luyện cách xác định nội dung cần đọc, ghi lại thuật ngữ chưa rõ và đối chiếu các phần tài liệu có liên quan. Khi gặp khái niệm mới, em tìm hiểu mục đích sử dụng trước khi đi sâu vào cấu hình.
+### Củng cố kiến thức chuyên môn
 
-### Ghi chép và tổng hợp
+Em cần ôn tập sâu hơn về mạng VPC, cách đọc chính sách IAM và mối liên hệ giữa các thành phần trong một hệ thống AWS. Khi học, em sẽ bổ sung sơ đồ và ví dụ để kiểm tra mức độ hiểu của bản thân.
 
-Em sắp xếp nội dung theo tuần, ghi chép hoạt động học tập theo ngày và tổng kết kiến thức chính. Cách làm này giúp em theo dõi tiến độ và thuận tiện ôn tập.
+### Bổ sung kỹ năng thực hành
 
-### So sánh và liên kết kiến thức
+Kiến thức hiện tại chủ yếu đến từ tài liệu. Trong thời gian tới, em cần thực hành từng nội dung với phạm vi nhỏ, xác định quyền truy cập và giới hạn chi phí trước khi tạo tài nguyên, đồng thời dọn dẹp tài nguyên sau khi hoàn thành.
 
-Em tập phân biệt các khái niệm dễ nhầm lẫn như xác thực và phân quyền, IAM User và IAM Role, public subnet và private subnet, dừng và chấm dứt EC2 instance.
+### Nâng cao tiếng Anh chuyên ngành
 
-### Đọc hiểu tiếng Anh chuyên ngành
+Em cần duy trì việc đọc tài liệu tiếng Anh, xây dựng bảng thuật ngữ cá nhân và tập tóm tắt nội dung bằng lời của mình.
 
-Việc tiếp xúc với thuật ngữ và tài liệu tiếng Anh giúp em mở rộng vốn từ chuyên ngành. Em cần tiếp tục luyện tập để cải thiện tốc độ đọc và mức độ chính xác.
+### Rèn luyện cách phân tích vấn đề
 
-## Thái độ học tập
+Em cần tập xác định biểu hiện, thu thập thông tin và tra cứu nguyên nhân theo trình tự. Khi có điều kiện thực hành, em sẽ ghi lại vấn đề và cách xử lý để đối chiếu với tài liệu.
 
-Em chú trọng đọc tài liệu theo trình tự, ghi chép nội dung cần thiết và hoàn thiện nhật kí học tập. Khi tổng hợp, em phân biệt kiến thức tìm hiểu qua tài liệu với những thao tác đã thực hiện thực tế.
+### Cải thiện cách trình bày
 
-Em nhận thức rằng hiểu khái niệm là bước đầu và cần tiếp tục thực hành để có thể sử dụng dịch vụ thành thạo.
+Em cần diễn đạt ngắn gọn, sử dụng ví dụ cụ thể và phân biệt rõ nội dung đã tìm hiểu với kết quả đã thực hiện thực tế.
 
-## Những hạn chế
+## Định hướng sau thực tập
 
-- Kiến thức chủ yếu được hình thành từ việc đọc tài liệu và phân tích ví dụ.
-- Trải nghiệm thực hành với các dịch vụ AWS còn hạn chế.
-- Khả năng đọc hiểu tiếng Anh chuyên ngành cần cải thiện.
-- Các chủ đề về mạng, chính sách IAM và cấu hình container cần được ôn tập thêm.
-- Cần rèn luyện cách giải thích kiến thức bằng ví dụ cụ thể, ngắn gọn.
-
-## Kế hoạch cải thiện
-
-- Ôn tập các chủ đề và bổ sung sơ đồ liên kết giữa các dịch vụ.
-- Tiếp tục đọc tài liệu chính thức để cập nhật kiến thức.
-- Luyện đọc tiếng Anh và xây dựng bảng thuật ngữ cá nhân.
-- Khi thực hành, xác định mục tiêu, quyền truy cập và giới hạn chi phí trước khi tạo tài nguyên.
-- Ghi lại kết quả, vấn đề gặp phải và cách xử lý.
-- Tham gia hoạt động cộng đồng phù hợp để học hỏi và trao đổi kiến thức.
-
-## Nhận xét chung
-
-Quá trình học tập giúp em xây dựng nền tảng ban đầu về AWS và rèn luyện phương pháp tự học qua tài liệu. Em cần tiếp tục củng cố kiến thức và bổ sung trải nghiệm thực hành để vận dụng tốt hơn trong học tập và công việc.
+Em sẽ tiếp tục sử dụng kiến thức đã học làm nền tảng để tìm hiểu sâu hơn về AWS. Mục tiêu tiếp theo là kết hợp đọc tài liệu với thực hành có kiểm soát, từ đó nâng cao khả năng vận dụng trong học tập và công việc.ụng tốt hơn trong học tập và công việc.
