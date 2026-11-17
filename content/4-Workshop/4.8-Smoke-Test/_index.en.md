@@ -8,34 +8,65 @@ pre: " <b> 4.8. </b> "
 
 ## Test prerequisites
 
-Prepare at least one ADMIN and two active USER accounts linked to Cognito, an authorized small file, an empty file and an oversized file for rejection tests. Use test data and record the commit, environment, tester and time. The following table lists **scenarios and expected results**, not preassigned passing outcomes.
+Prepare at least one ADMIN, one MANAGER with an assigned department and two active USER accounts linked to Cognito; arrange accounts in the same/different departments, an authorized small file, an empty file and an oversized file for rejection tests. Use test data and record the commit, environment, tester and time. The following table lists **scenarios and expected results**, not preassigned passing outcomes.
 
 | ID | Scenario | Expected result |
 | --- | --- | --- |
 | AUTH-01 | Missing, invalid or expired access token | Business API rejects the request without exposing content |
 | AUTH-02 | USER calls an administrative API | Access denied |
-| DOC-01 | Create metadata, PUT to S3 and confirm upload | Object exists; metadata is correct and readable |
+| DOC-01 | Send multipart to POST /api/documents/upload | Backend stores/confirms S3 before commit; metadata is correct and readable |
 | DOC-02 | Concurrent uploads with identical filenames | Distinct object keys; no unintended overwrite |
-| DOC-03 | Failed/missing PUT followed by confirmation | Missing object is not confirmed; allocation remains tracked |
+| DOC-03 | S3 upload/confirmation fails within the transaction | Metadata rolls back; attempt cleanup of the upload object and log cleanup failures |
 | DOC-04 | Zero-byte file | Preview/download handles the file appropriately for its format |
 | DOC-05 | File exceeds 100 MiB or the account quota | Rejected; allocations remain within the quota |
+| DOC-06 | Lose the response after successful upload; retry the same requestId/file | Return the saved document without creating a duplicate |
+| DOC-07 | Replace a file with EDIT permission and no report protection | Preserve ID/owner/shares/favorites; update content and size |
 | ACL-01 | Grant VIEW to USER B | B can preview but cannot obtain download/edit access |
 | ACL-02 | Grant DOWNLOAD/EDIT | Only the corresponding actions are allowed; sharing administration is not implied |
 | ACL-03 | USER C has no share | API denies preview/download/edit |
 | ACL-04 | Revoke B's permission | New URL requests are blocked; previously issued URLs may remain valid until expiration |
+| ACL-05 | MANAGER accesses documents owned by accounts in the same/different department | Additional preview only within the department; no automatic download/edit/share/delete permission |
+| ACL-06 | Change/revoke one or multiple permissions in Sent shares | Only owner/ADMIN manages shares; new permissions apply on subsequent API requests |
+| FOLDER-01 | Create subfolders and move one/multiple owned files | Correct hierarchy; preserve S3 keys, shares and favorites |
+| FOLDER-02 | USER/MANAGER organizes another account's files or folders | Denied even when document preview is allowed |
+| FOLDER-03 | Delete a folder tree containing a protected report | Cancel the whole operation; no partial move to trash |
 | TRASH-01 | Owner moves a file to trash | Preview/download/edit/share are blocked; quota still includes the file |
 | TRASH-02 | Restore a file | Returns to ACTIVE and preserves earlier shares as designed |
 | TRASH-03 | Permanently delete a test file | Object/permissions removed; metadata becomes PURGED with size 0; audit retained |
 | BULK-01 | Select multiple files including one permission failure | Show individual success/failure and allow retrying failed items |
-| QUOTA-01 | Pending uploads, trash and shared documents | Pending/trash count against the owner; sharing does not multiply allocation |
+| QUOTA-01 | Successful/failed uploads, trash and shared documents | Rolled-back uploads do not increase committed usage; trash counts against the owner; sharing does not multiply allocation |
 | AUDIT-01 | USER/ADMIN reads audit records | USER sees their own actor events; ADMIN sees system-wide events |
 | TASK-01 | ADMIN assigns work; USER submits a valid document | Private notification and SUBMITTED/pending approval status |
 | TASK-02 | Creator requests changes, then approves | Only authorized actor proceeds; feedback, audit and notifications recorded |
 | TASK-03 | Submit after the deadline | Submission accepted and labeled late; reviewer delay does not make a pending approval overdue |
 | TASK-04 | Two tabs use an outdated version | HTTP 409; user must reload current data |
 | TASK-05 | Delete/overwrite a SUBMITTED/COMPLETED report file | API blocks the operation using the current release's guard |
-| TASK-06 | Delete one or multiple tasks | Only the assigning ADMIN; retain documents/permissions/audit and handle related notifications |
+| TASK-06 | Delete one or multiple tasks | Only the assigning ADMIN/MANAGER; retain documents/permissions/audit and handle related notifications |
+| TASK-07 | MANAGER assigns work within/across departments | Only active USER accounts in the same department; no assignment to another MANAGER |
 | USER-01 | Delete an account with files or unfinished tasks | Blocked according to current conditions |
+| DEPT-01 | USER/MANAGER calls department management or role-change APIs | Denied; ADMIN manages data subject to constraints |
+| UI-01 | Search/filter/sort and select all with more than 20 items | Browser-side pagination; select only eligible rows on the current page |
+
+## Actual results and evidence scope
+
+The table below summarizes what the stored evidence demonstrates and what still requires verification. Screenshots record individual moments and do not establish a shared commit or show that every scenario above passed. Current-release descriptions were checked against the CloudDocs source on 16 November 2026; this evidence set contains no test-suite execution results tied to an acceptance commit/JAR.
+
+| Item | Recorded result | Evidence / limitation |
+| --- | --- | --- |
+| EC2 and backend | Instance Running; service active, health UP/HTTP 200 | T01, T06; checked on the instance, without verifying all external flows |
+| RDS MySQL | Successful connection and metadata query | T07–T10; screenshots show Publicly accessible = Yes and SSL: Not in use; recommended private/TLS configuration is not demonstrated |
+| Private S3 | Public access blocked, SSE-S3 and objects under documents/ | H01–H07; no single file traced across DB/S3/interface |
+| Sign-in and file operations | Admin session; upload, TXT preview and download screenshots | K01, K02a–K02c; current upload implementation and requestId retry on the deployed release remain unverified |
+| Sharing, trash and restoration | Different permission controls; the same file trashed and restored | K03–K05; API rejection and URLs after revocation require separate tests |
+| Report submission and approval | The same task moves from Pending approval to Completed; an additional list displays a Late submission label | K07–K08, K18; the change-request/resubmission sequence, submission timestamps and two-tab conflicts are not illustrated |
+| Administration, storage, audit and search | User, statistics, activity and filename search screens | K09–K12; figures reflect capture-time data |
+| Departments and profiles | Active departments are listed; the admin profile displays an avatar and editable fields | K13, K17; no before/after pair for adding/editing/deactivating departments or saving a profile |
+| Folders and Sent shares | Folder 123 contains three documents; four sharing grants are listed for two recipients | K14–K15; preservation of permissions after moving and the outcome of changing/revoking grants remain unverified |
+| Content replacement | The edit dialog provides a replacement file selector and report-protection guidance | K16; no save result or before/after content comparison |
+| MANAGER and access control | Implementations and corresponding test files exist in the source | K13–K18 all show an admin session; same/different department tests with MANAGER/USER remain necessary |
+| HTTPS, monitoring, recovery and costs | Operational instructions and plans are documented | Existing evidence contains no acceptance results for HTTPS, CloudWatch, restoration or billing |
+
+Existing results illustrate core business functions and individual AWS components. Acceptance of the new release requires recording its commit/JAR and rerunning scenarios in the same environment; add measured outcomes rather than inferring them from earlier screenshots.
 
 ## Automated tests and limitations
 
@@ -134,3 +165,39 @@ Open Activity log. The screenshot records actors and timestamps for upload, dele
 Enter DeCuong in document search. Two matching filenames appear. The screenshot illustrates filename search, not filtering by file type or department.
 
 ![K12. Document search](/images/workshop-evidence/04-kiem-thu-tich-hop/k12-document-search-filter.png)
+
+### K13. Department management
+
+In an admin session, open Departments. Four departments—admin, Kinh Doanh, Kỹ thuật and Nhân sự—are listed as active and assigned by admin. The interface includes a department creation field, an employee self-selection option and Edit, Deactivate and Delete buttons. This demonstrates the list and available controls; the screenshot does not record the outcome of each operation.
+
+![K13. Department management](/images/workshop-evidence/04-kiem-thu-tich-hop/k13-department-management.png)
+
+### K14. Documents inside a folder
+
+Open folder 123 under Documents. The Documents → 123 breadcrumb and three files are displayed, alongside folder creation, move-to-folder and per-file controls. Pagination reads 1–3 / 3 items on page 1. This illustrates folder browsing and pagination controls, without demonstrating paging over more than 20 items or a successful move. SQL files in the list are documents stored in the application; their presence does not demonstrate SQL execution or a database reset.
+
+![K14. Documents inside a folder](/images/workshop-evidence/04-kiem-thu-tich-hop/k14-folder-documents.png)
+
+### K15. Tracking permissions in Sent shares
+
+Open Sent shares as admin. The summary displays 4 documents, 2 recipients and 4 active grants. Rows show recipients, the Nhân sự department, sharing times and View or Edit access; each row includes a permission selector and Revoke button. Multiple grants can also be selected for revocation. The screenshot illustrates listed grants; verify the subsequent state and recipient access to confirm that changes/revocations take effect.
+
+![K15. Tracking permissions in Sent shares](/images/workshop-evidence/04-kiem-thu-tich-hop/k15-sent-shares.png)
+
+### K16. Document editing and content replacement dialog
+
+In the same folder 123 as K14, open Edit for HUONG_DAN_CHUP_ANH_WORKSHOP (1).docx, Document #57. The dialog offers name, department, description and status fields, plus an optional replacement file selector. Interface guidance states a 100 MB limit and prohibits replacement of reports pending approval or already completed. No replacement file is selected and no save confirmation is shown, so the screenshot records the editing interface before submission.
+
+![K16. Document editing and content replacement dialog](/images/workshop-evidence/04-kiem-thu-tich-hop/k16-document-replacement-dialog.png)
+
+### K17. Personal profile and avatar
+
+Open Personal profile. The screenshot displays an avatar, Choose/Save/Delete image buttons, a fixed internal username and name, email and department fields. Account information shows ADMIN and Active status. Interface guidance accepts JPG/PNG up to 5 MB with a centered square crop. The screenshot illustrates an existing profile and update controls; no before/after pair or save confirmation is provided.
+
+![K17. Personal profile and avatar](/images/workshop-evidence/04-kiem-thu-tich-hop/k17-profile-avatar.png)
+
+### K18. Task status summary and late submission
+
+Open Tasks with the Assigned by me scope. The screenshot records 4 tasks, 1 Pending approval and 0 Overdue; individual rows show Not started, In progress, Pending approval and Completed. The final VCB task also has a Late submission label, illustrating completed status alongside a late-submission indicator. These are different tasks rather than one task moving through all states; deadline/submission details are needed to verify the late-submission calculation.
+
+![K18. Task status summary and late submission](/images/workshop-evidence/04-kiem-thu-tich-hop/k18-task-status-late.png)
