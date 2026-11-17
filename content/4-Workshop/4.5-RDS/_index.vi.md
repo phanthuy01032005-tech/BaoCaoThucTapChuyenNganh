@@ -1,67 +1,103 @@
 ---
-title: "RDS MySQL, schema và migration"
+title: "Private S3 and CORS configuration"
 date: 2026-11-07
-weight: 5
+weight: 4
 chapter: false
-pre: " <b> 4.5. </b> "
+pre: " <b> 4.4. </b> "
 ---
 
-## 1. Chuẩn bị RDS
+## 1. Create or verify the bucket
 
-Trong RDS Console tạo/đối chiếu MySQL phù hợp với bản ứng dụng. Chọn VPC/subnet group và DB SG đã chuẩn bị; cấu hình storage, backup retention và quản lý mật khẩu theo môi trường. Đối với lab một DB Single-AZ, không ghi là Multi-AZ nếu chưa cấu hình. Ghi lại endpoint, port và schema name ở nơi quản lý cấu hình.
+In the S3 Console, select the project bucket in the agreed Region. Keep **Block Public Access**, **Bucket owner enforced** Object Ownership and default encryption enabled. Review existing data before changing an active bucket. Do not enable public website hosting for the document bucket.
 
-## 2. Import schema gốc
+The backend uses the documents/ prefix and UUID keys. Policy, CORS and script examples are in Back_end/aws/s3. Running these tools changes infrastructure; they are not mandatory application startup steps.
 
-Repository hiện **không có bộ cài schema trống hoàn chỉnh**. Sử dụng bản export đã được kiểm tra nguồn gốc và schema, kiểm tra dữ liệu nhạy cảm và import vào DB thử trước. Các bảng nghiệp vụ nền như users/documents/audit_logs phải tồn tại. Không chạy migration tăng dần lên DB rỗng và không bật ddl-auto=update để né lỗi validate.
+## 2. Configure CORS for the actual origin
 
-## 3. Rà soát migration
+Example for S3 Console → Permissions → CORS; replace the origin:
 
-| Thứ tự | File trong Back_end/db/migration | Vai trò |
-| --- | --- | --- |
-| 0 | 00_PRECHECK.sql | Kiểm tra tham chiếu chủ sở hữu cũ |
-| 1 | 01_APPLY_document_permissions.sql | owner_id và quyền chia sẻ |
-| 2 | 02_APPLY_document_favorites.sql | Yêu thích |
-| 3 | 03_APPLY_notifications.sql | Thông báo chung |
-| 4 | 04_APPLY_cognito_identities.sql | Ánh xạ issuer/sub |
-| 5 | 05_APPLY_optional_contact_email.sql | Email liên hệ tùy chọn |
-| 6 | 06_APPLY_work_tasks.sql | Công việc và thông báo người nhận; thuộc bản cập nhật tháng 11 |
+~~~json
+[
+  {
+    "AllowedHeaders": ["*"],
+    "AllowedMethods": ["GET", "HEAD"],
+    "AllowedOrigins": ["https://YOUR_FRONTEND_HOST"],
+    "ExposeHeaders": ["ETag"],
+    "MaxAgeSeconds": 3600
+  }
+]
+~~~
 
-Chỉ áp dụng bước còn thiếu sau khi sao lưu và preflight đúng database. Migration 04 và share-cognito-identities.sql là hai cách tạo cùng bảng, không chạy nối tiếp. MySQL DDL có thể tự commit; không coi một ROLLBACK là hoàn tác toàn bộ ALTER/CREATE.
+The Console expects the **array of rules** shown above. AWS CLI JSON wraps rules in a CORSRules object, as in the repository example. For local development, add the exact active origin, such as http://localhost:5500 or http://127.0.0.1:5500. CORS does not replace IAM or make a bucket public.
 
-## 4. Kết nối ứng dụng
+The current upload flow passes through the backend and does not depend on S3 CORS; direct preview/download still requires appropriate CORS. Backend PutObject permission comes from IAM/bucket policies. The older practice configuration in H04 also allows PUT; this is not required for the current upload flow.
 
-Đặt DB_HOST, DB_PORT, DB_NAME, DB_USERNAME, DB_PASSWORD ngoài mã nguồn. Chọn user ứng dụng có quyền cần thiết, tách khỏi user quản trị migration.
+## 3. Backend configuration
 
-**TLS:** cấu hình application.yml hiện có chuỗi JDBC local chứa useSSL=false. Khi lên AWS, ghi đè SPRING_DATASOURCE_URL bằng JDBC URL của RDS dùng sslMode=VERIFY_IDENTITY và cấu hình truststore/CA bundle RDS phù hợp với JVM. Kiểm tra SSL session; không chỉ đổi DB_HOST rồi mặc định kết nối đã được mã hóa.
+| Variable | Required value |
+| --- | --- |
+| AWS_REGION | Actual bucket Region |
+| S3_BUCKET | The project's bucket name |
+| S3_PRESIGN_EXPIRY | Lifetime in seconds; current default is 900 and may be reduced as required |
 
-## 5. Kiểm tra
+## 4. Test the normal workflow
 
-Khởi động backend bằng schema đã kiểm tra; xác nhận ddl-auto=validate không báo thiếu bảng/cột. Chạy đọc/ghi dữ liệu thử được phép, kiểm tra metadata/audit và chụp kết quả đã che thông tin nhạy cảm. Thử phục hồi backup trên DB riêng trước khi ghi là đã kiểm chứng khôi phục.
+1. Sign in and select a file with an optional description; the destination folder belongs to the current account.
+2. The frontend sends POST /api/documents/upload as multipart with file, metadata, requestId (UUID) and optional folderId. Use the current UI/DTO rather than guessing JSON fields.
+3. The backend checks permissions/quota, uploads using a separate object key and performs HEAD; metadata is committed only after all processing succeeds.
+4. After a lost response, retry the same requestId and file to retrieve the saved document; transaction failure rolls back data and attempts object cleanup. Inspect logs if cleanup fails.
+5. Obtain preview-url/download-url using an authorized account and open the new presigned GET URL. The legacy standalone metadata creation and upload-url APIs are blocked; do not follow the former direct browser PUT instructions.
+
+**Expected result:** the private object exists, metadata confirms the upload and unshared accounts are denied access. Previously signed URLs may remain usable until expiration; temporary credential expiration can invalidate them earlier.
+
+## Common errors
+
+For preview/download 403 errors, check the signing principal, policy, prefix, Region and URL expiration. For CORS, compare the complete scheme/host/port origin and test in a browser. For upload failures, inspect backend logs, PutObject/GetObject permissions and S3 connectivity. For HTTP 413, compare backend/Nginx multipart limits. Do not delete old failed records before checking their corresponding S3 objects.
+
+See [CORS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html) and [presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html).
 
 <!-- workshop-evidence -->
 
-## Thực hành và kết quả minh họa
+## Practice and illustrated results
 
-### T07. Tổng quan RDS MySQL
+### H01. Bucket and Region
 
-Mở RDS → Databases → clouddocs-mysql → Configuration. Ảnh thể hiện trạng thái Available, MySQL Community, lớp db.t4g.micro và database company_documents. Đối chiếu cấu hình này trước khi thiết lập datasource của backend.
+Open S3 → Buckets. The clouddocs-dev-private bucket is in Asia Pacific (Singapore), ap-southeast-1; configure the backend S3 client for this Region.
 
-![T07. Tổng quan RDS MySQL](/images/workshop-evidence/01-tung-ec2-rds/t07-rds-overview.png)
+![H01. Bucket and Region](/images/workshop-evidence/03-hai-luong-s3/h01-s3-bucket-region.png)
 
-### T08. Endpoint và mạng của RDS
+### H02. Block public access
 
-Trong Connectivity & security, ghi nhận endpoint, cổng 3306, VPC, subnet và các Security Group. Publicly accessible trong ảnh đang là Yes; vì vậy đây chưa phải bằng chứng RDS private theo phương án khuyến nghị phía trên. Khả năng truy cập thực tế còn phụ thuộc các nhóm mạng và đường đi.
+Under Permissions, Block all public access is On and Object Ownership is Bucket owner enforced. Documents use authorized access rather than a public bucket website.
 
-![T08. Endpoint và mạng của RDS](/images/workshop-evidence/01-tung-ec2-rds/t08-rds-connectivity.png)
+![H02. Block public access](/images/workshop-evidence/03-hai-luong-s3/h02-s3-block-public-access.png)
 
-### T09. Quy tắc MySQL của DB Security Group
+### H03. Cross-account bucket policy
 
-Mở nhóm rds-ec2-1 → Inbound rules. Quy tắc trong ảnh nhận MySQL/Aurora TCP 3306 từ một Security Group EC2. Cần rà soát cả các nhóm khác đang gắn với DB; một ảnh của một nhóm không đại diện toàn bộ quyền mạng.
+The bucket policy allows CloudDocsEc2Role in account 861358180788 to read, write and delete objects under documents/*. Compare the role ARN with T02/T05 and its permission policy. This is resource-policy access, not evidence that the application assumes a separate S3 role.
 
-![T09. Quy tắc MySQL của DB Security Group](/images/workshop-evidence/01-tung-ec2-rds/t09-rds-sg-inbound.png)
+![H03. Cross-account bucket policy](/images/workshop-evidence/03-hai-luong-s3/h03-s3-bucket-policy.png)
 
-### T10. Kết nối RDS và truy vấn dữ liệu
+### H04. Saved CORS configuration
 
-Trong MySQL client, kiểm tra thông tin kết nối tới endpoint RDS và database company_documents. SHOW TABLES hiển thị các bảng nghiệp vụ như users, documents, document_permissions, audit_logs và work_tasks. Truy vấn SELECT id, title, file_type, file_size, created_at FROM documents WHERE id IN (35, 36, 37) ORDER BY id trả về ba bản ghi tài liệu, minh họa việc đọc metadata từ cơ sở dữ liệu. Đây là các bản ghi thử trong ảnh, không mặc định cùng tệp ở H07. Thông tin phiên kết nối hiển thị SSL: Not in use; vì vậy ảnh này chứng minh kết nối và truy vấn, chưa chứng minh TLS đã được bật theo hướng dẫn phía trên.
+Under Permissions → CORS, the saved configuration allows GET, PUT and HEAD from http://54.255.190.1; ExposeHeaders contains ETag and Content-Disposition, and MaxAgeSeconds is 300. This is the origin recorded at capture time; synchronize it when the frontend host or port changes.
 
-![T10. Kết nối RDS và truy vấn dữ liệu](/images/workshop-evidence/01-tung-ec2-rds/t10-rds-data-query.png)
+![H04. Saved CORS configuration](/images/workshop-evidence/03-hai-luong-s3/h04-s3-cors.png)
+
+### H05. Default SSE-S3 encryption
+
+Open Properties → Default encryption. The encryption type is SSE-S3 with Amazon S3 managed keys; this is not an SSE-KMS configuration.
+
+![H05. Default SSE-S3 encryption](/images/workshop-evidence/03-hai-luong-s3/h05-s3-default-encryption.png)
+
+### H06. Stored objects under documents/
+
+Open Objects → documents/ to compare keys, file types, sizes and modification times. The list contains both older and newer test keys; it does not imply that every object was created by the same application version.
+
+![H06. Stored objects under documents/](/images/workshop-evidence/03-hai-luong-s3/h06-s3-uploaded-object.png)
+
+### H07. Individual object properties
+
+Select DeCuongThucTapChuyenNganh.docx → Properties. The screenshot records a documents/ key, a 36.9 KB size, Standard storage and SSE-S3; Bucket Versioning is Disabled. These properties complement the H06 object list.
+
+![H07. Individual object properties](/images/workshop-evidence/03-hai-luong-s3/h07-s3-object-properties.png)
